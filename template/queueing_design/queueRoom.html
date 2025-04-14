@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="homeDash.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="">
+    <link href="./css/queueRoom.css" rel="stylesheet">
+    <link href="../../Template/clientSide/css/style.css" rel="stylesheet">
+    <title>Queue Room</title>
+</head>
+</head>
+<body>
+    <!-- ======= sidebar ======= -->
+    <div id="sidebar">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="../../template/queueing_design/assest/Logo=with-text.png" alt="" class="img-fluid ">
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#Home" class="nav-link scrollto  NavHome"><i class="fa fa-home navIcons"
+                                aria-hidden="true"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#Stats" class="nav-link scrollto  NavStats"><span
+                                class="material-symbols-outlined navIcons">
+                                bar_chart
+                            </span><span>Stats</span></a></li>
+                    <li><a href="#resume" class="nav-link active scrollto  NavQueueRoom"><span
+                                class="material-symbols-outlined navIcons">
+                                meeting_room
+                            </span> <span>Queue Room</span></a></li>
+                    <li>
+                        <a href="#portfolio" class="nav-link scrollto NavTemplateManagement"><span
+                                class="material-symbols-outlined navIcons">
+                                team_dashboard
+                            </span> <span>Template Management</span></a>
+                        <ul>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavQueueDesign ps-5"><span
+                                        class="material-symbols-outlined navIcons">
+                                        draw
+                                    </span>
+                                    <span>Queue Design</span></a>
+                            </li>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavInOutRules ps-5"><span
+                                        class="material-symbols-outlined navIcons">
+                                        rule
+                                    </span>
+                                    <span>In / Out Rules</span></a>
+                            </li>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavSMSEmailNotice ps-5"><i
+                                        class="fa fa-envelope navIcons" aria-hidden="true"></i>
+                                    <span>SMS / Email Notice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#services" class="nav-link scrollto NavDeveloper "><i class="fa fa-code navIcons"
+                                aria-hidden="true"></i>
+                            <span>Developer</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </div>
+    <!-- End sidebar -->
+    <header id="header">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+
+            </div>
+            <div class="sideContent d-flex align-items-center justify-content-between">
+                <!-- ======= Mobile nav toggle button ======= -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <div class="me-5" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../../template/queueing_design/assest/profile.png" alt="Profile Icon"
+                                    class="profile-icon me-1 profilewidth">
+                                <!-- Add user's name or any identifier -->
+                                <span class="me-1">Vaishnavi</span>
+                                <button class="btn btn-link me-1">
+                                    <span class="material-symbols-outlined dropbutton">
+                                        expand_more
+                                    </span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu NavDropdown" aria-labelledby="profileDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2"> person</span>
+                                            <span>My profile</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2">groups</span>
+                                            <span>Staff access management<span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <div class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2">description</span>
+                                            <span>Subscription plan</span>
+                                        </div>
+                                        </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined logoutbutton pe-2">logout</span>
+                                            <span class="text-danger">Log out</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-xl-none">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </i>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="bgmain">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-xl-8 col-md-12 d-flex queuehomeicon">
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb navbreadcrum">
+                            <li class="breadcrumb-item"><a href="../../Template/Home.html">
+                                    <i class="fa fa-home queuehomeicon" aria-hidden="true"></i></a></li>
+                            <li class="breadcrumb-item " aria-current="page">
+                                <div class="queueText">Queue Room</div>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-3 col-xs-12 col-sm-6 mb-3">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 col-sm-6  mb-3 d-flex justify-content-end">
+                   
+                      <a href="../../Template/clientSide/createQueueRoom.html">  <button class="btn bsb-btn-2xl subbtnbtn submitbtn w-auto px-4" type="submit">
+                            <div class="d-flex justify-content-between">
+                            <span class="material-symbols-outlined  plusicon pe-3">
+                                add
+                                </span>
+                            <h6 class="createqueue">Create queue room</h6>
+                                </div>
+                        </button></a>
+                        
+                  
+                </div>
+             </div>
+
+             <!-- table -->
+             <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <div class="card allcard">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                    <table class="table mb-0 spacetable">
+                        <thead class="table bgtable">
+                       <tr>
+                        <th class="border-0 py-0 align-middle"><h6 class="queueth">Period</h6></th>
+                        <th class="border-0 py-0 align-middle"><h6 class="queueth">Queue Room</h6></th>
+                        <th class="border-0 py-0 align-middle"><h6 class="queueth">Last Modified</h6></th>
+                        <th class="border-0 py-0 align-middle"><h6 class="queueth">Status</h6></th>
+                       </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- first row -->
+                          <tr>
+                            <td class="border-0 ">
+                                <div class="row align-items-center">
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata">18 Mar 2024</h6>
+                                   <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                </div>
+
+                                <div class="col-md-2 col-sm-2 col-2">
+                                    <span class="material-symbols-outlined text-muted fs-6">
+                                        remove
+                                        </span>
+                                </div>
+
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata"></h6>
+                                   <small class="ps-3 text-muted">No end time</small>
+                                </div>
+                                </div>
+                                </td>
+
+                            <td class="border-0 d-flex">
+                                <img src="./assest/hello.png" alt="Image Alt Text" width="50" height="50" >
+                               <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> vaishnavi</h6>
+                               <small class="ps-3 text-muted">No end time</small>
+                            </div>
+                            </td>
+                           
+                        <td class="border-0 ">
+                            <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> Peter</h6>
+                               <small class="ps-3 text-muted">17 December 2023 at 6:23 PM HKT</small>
+                            </div>
+                            </td>
+
+                            <td class="border-0 ">
+                                <div class="d-flex align-items-center">
+                                <i class="fa fa-circle me-2 text-danger" aria-hidden="true"></i>
+                                <h6 class="mt-2 ps-3 textdata">Live</h6>
+                                </div>
+                            </td>
+                          </tr>
+
+                          <!-- second row -->
+                          <tr>
+                            <td class="border-0 ">
+                                <div class="row align-items-center">
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata">23 Nov 2024</h6>
+                                   <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                </div>
+
+                                <div class="col-md-2 col-sm-2 col-2">
+                                    <span class="material-symbols-outlined text-muted fs-6">
+                                        remove
+                                        </span>
+                                </div>
+                                
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata">23 Nov 2024</h6>
+                                   <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                </div>
+                                </div>
+
+                                </td>
+
+                            <td class="border-0 d-flex">
+                                <img src="./assest/profile.png" alt="Image Alt Text" width="50" height="50" >
+                               <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> pragati</h6>
+                               <small class="ps-3 text-muted">No end time</small>
+                            </div>
+                            </td>
+    
+                            <td class="border-0 ">
+                                <div>
+                                    <h6 class="mt-2 ps-3 mb-0 textdata"> Peter</h6>
+                                   <small class="ps-3 text-muted">17 December 2023 at 6:23 PM HKT</small>
+                                </div>
+                                </td>
+                            
+                            <td class="border-0 ">
+                                <div class="d-flex align-items-center">
+                                <i class="fa fa-circle me-2 text-success" aria-hidden="true"></i>
+                                <h6 class="mt-2 ps-3 textdata">Live</h6>
+                                </div>
+                            </td>
+                          </tr>
+
+                          <!-- third row -->
+                          <tr>
+                            <td class="border-0 ">
+                                        <div class="row align-items-center">
+                                        <div class="col-md-5 col-sm-5 col-5">
+                                            <h6 class="mt-2 ps-3 mb-0 textdata datedata">24 Nov 2024</h6>
+                                           <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                        </div>
+        
+                                        <div class="col-md-2 col-sm-2 col-2">
+                                            <span class="material-symbols-outlined text-muted fs-6">
+                                                remove
+                                                </span>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-5">
+                                            <h6 class="mt-2 ps-3 mb-0 textdata datedata"></h6>
+                                           <small class="ps-3 text-muted">No end time</small>
+                                        </div>
+                                        </div>
+                                   
+                                </td>
+
+    
+                            <td class="border-0 d-flex">
+                                <img src="./assest/Logo=with-text.png" alt="Image Alt Text" width="50" height="50" >
+                               <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> pragati</h6>
+                               <small class="ps-3 text-muted">No end time</small>
+                            </div>
+                            </td>
+    
+                            <td class="border-0 ">
+                                <div>
+                                    <h6 class="mt-2 ps-3 mb-0 textdata"> Peter</h6>
+                                   <small class="ps-3 text-muted">17 December 2023 at 6:23 PM HKT</small>
+                                </div>
+                                </td>
+
+                            <td class="border-0 ">
+                                <div class="d-flex align-items-center">
+                                <i class="fa fa-circle me-2 text-secondary" aria-hidden="true"></i>
+                                <h6 class="mt-2 ps-3 textdata">Past</h6>
+                                </div>
+                            </td>
+                          </tr>
+
+                          <!-- fourth row -->
+                          <tr>
+                            <td class="border-0 ">
+                                <div class="row align-items-center">
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata">27 Apr 2024</h6>
+                                   <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                </div>
+
+                                <div class="col-md-2 col-sm-2 col-2">
+                                    <span class="material-symbols-outlined text-muted fs-6">
+                                        remove
+                                        </span>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-5">
+                                    <h6 class="mt-2 ps-3 mb-0 textdata datedata">27 Apr 2024</h6>
+                                   <small class="ps-3 text-muted">10:00 AM HKT</small>
+                                </div>
+                                </div>
+
+                                </td>
+
+    
+                            <td class="border-0 d-flex">
+                                <img src="./assest/bg.png" alt="Image Alt Text" width="50" height="50" >
+                               <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> pragati</h6>
+                               <small class="ps-3 text-muted">No end time</small>
+                            </div>
+                            </td>
+    
+                          <td class="border-0 ">
+                            <div>
+                                <h6 class="mt-2 ps-3 mb-0 textdata"> Peter</h6>
+                               <small class="ps-3 text-muted">17 December 2023 at 6:23 PM HKT</small>
+                            </div>
+                            </td>
+                            
+                            <td class="border-0 ">
+                                <div class="d-flex align-items-center">
+                                <i class="fa fa-circle me-2 text-secondary" aria-hidden="true"></i>
+                                <h6 class="mt-2 ps-3 textdata">Draft</h6>
+                                </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+  </div>
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="../../Template/clientSide/js/main.js"></script>
+</body>
+</html>

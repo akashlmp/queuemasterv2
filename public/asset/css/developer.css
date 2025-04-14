@@ -1,0 +1,134 @@
+.LeftRedborder {
+    border-left: 4px solid #FF0F0F;
+}
+.LeftGreenborder {
+    border-left: 4px solid #008000;
+}
+nav.QueueBreadCrumb.developerBreadCrumb li.breadcrumb-item a {
+    background: #CA54261A;
+    color: #CA5426;
+}
+nav.QueueBreadCrumb .breadcrumb-item+.breadcrumb-item::before{
+    color: #CA5426;
+}
+
+.developerbtn{
+    background-color: #CA5426;
+    padding: 20px;
+    color: white;
+}
+button.btn.btn-primary.DevCopyBtn {
+    background: transparent;
+    color: #000;
+    border: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 44%;
+    height: 33px;
+    margin: 0px;
+}
+.DevelopmentTool {
+    position: relative;
+}
+a.btn.btn-danger.Markascompleted {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 10px 10px;
+}
+.CompletedBtn{
+    width: 100%;
+    padding: 10px 10px;
+}
+table.table.align-middle.developerTable {
+    border-collapse: separate;
+    border-spacing: 0px 33px;
+}
+table.table.align-middle.developerTable td{
+    border: 0;
+}
+.bgtable {
+    background-color: #F2EEEB;
+}
+table.table.align-middle.developerTable th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 100%;
+    border-bottom: 3px solid #FB5501;
+    ;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.form-group.has-search{
+    position: relative;
+}
+.DevelopmentTool .form-control.js-snippet {
+    background: transparent;
+    color: gray;
+    padding-right: 50px;
+}
+.allcard .spacetable td {
+    background: #fff;
+    border-bottom: 4px solid #F3F5F9 !important;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+table.spacetable tr td:first-child{
+    padding-left: 40px;
+}
+table.spacetable tr td:last-child{
+    padding-right: 40px;
+}
+
+@media screen and (max-width:768px){
+    table#queueRoomTable {
+        white-space: nowrap;
+    }
+}
+.card-body.statsCard.infoCard {
+    border-top: 4px solid #1458c2;
+    background-color: #edf4ff;
+    border-radius: 6px;
+}
+.card-body.statsCard.infoCard .QueueMasterheading {
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+}
+.card-body.statsCard.infoCard .QueueMasterIcon {
+    font-size: 20px !important;
+    color: #1458c2;
+}
+.card-body.statsCard.infoCard h6.ms-2.mb-0.QueueMasterheading.stattext {
+    line-height: 1;
+}
+
+.card-body.statsCard.infoCard .QueueMasterIcon {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.card-body.statsCard.infoCard p {
+    font-size: 14px;
+}

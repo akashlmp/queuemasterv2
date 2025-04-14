@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a.labelcheck {
+    text-decoration: none;
+}
+
+.mainbg{
+    width: 100%;
+    background: url(../assest/bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.card.shadow{
+    margin-top: 20px;
+    width: 128%;
+}
+
+.credential{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.4px;
+    color:  #030229;
+}
+input#email,
+input#password {
+    border: none;
+    padding: 1rem;
+    background-color:  #F7F7F8;
+}
+.submitbtn{
+    background-color: #1458C2;
+    padding: 0.5rem;
+    border-radius: 5px;
+   
+}
+
+button.btn.bsb-btn-2xl.subbtnbtn{
+    font-family: Arial;
+    font-weight: 700;
+    size: 16px;
+    line-height: 18.4px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .card.shadow{
+        width: 100%;
+    }
+}

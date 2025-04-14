@@ -1,0 +1,234 @@
+
+.bgmain{
+    background-color: #F3F5F9;
+    min-height: 100vh;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 100%;
+    border-bottom: 3px solid #FF397B;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.allcard .spacetable td {
+    background: #fff;
+    border-bottom: 4px solid #F3F5F9 !important;
+}
+.liveroom{
+    background: #952FBF;   ;
+    padding: 9px;
+    border-radius: 23px;
+    height: 40px;
+    color: white;
+    line-height: 1px;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    
+}
+
+nav.QueueBreadCrumb.StatsQueueRoom li.breadcrumb-item a{
+    background-color: #952FBF1A;
+    color: #FF397B;
+}
+
+nav.QueueBreadCrumb.StatsQueueRoom .breadcrumb-item+.breadcrumb-item::before{
+    color: #FF397B;
+}
+.navbreadcrum {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.allcard{
+    border: none;
+}
+.bgtable{
+    background-color:#F2EEEB ;
+}
+
+.queueth, .textdata{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.progress{
+    width: 9pc;
+    height: 9px;
+}
+.editicon{
+    color:#FF397B
+}
+.editicon:active , .editicon:focus, .editicon:hover{
+    color: #FF397B;
+}
+
+.cardborder{
+    border: 3px solid #ADB5BD
+}
+
+.textheading{
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.checkboxdata {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-item {
+    margin-right: 20px;
+}
+
+.checkbox-item input {
+    margin-right: 5px;
+    transform: scale(1.5);
+    background-color:#FF397B;
+    accent-color:#FF397B;
+}
+.heading{
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+color:#7C7C7C;
+}
+
+.spaceing{
+    gap: 20px;
+}
+.lastclass{
+    justify-content: space-between;
+}
+
+.dropdownwidth{
+    width: 60%;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: none;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0
+}
+select#chartFilter {
+    background: #FF397B33;
+    padding: 9px;
+    border-radius: 23px;
+    height: 40px;
+    color: black;
+    line-height: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+select#editinline { 
+    background: #FF397B33;
+    padding: 9px;
+    border-radius: 23px;
+    height: 40px;
+    color: black;
+    line-height: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+  .dropdown-menu {
+            /* background-color: #952FBF; */
+        }
+        .dropdown-item.list {
+            color: white;
+        }
+        .dropdown-item.list:hover {
+            background-color: #FF397B; /* Darken the background on hover if desired */
+        }
+
+@media only screen and (max-width: 768px) {
+    .stateText {
+        width: 70%;
+        text-align: center;
+    }
+    .liveroom{
+        width: 100%;
+    }
+    .checkboxdata {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .checkbox-item input {
+        transform: scale(1);
+    }
+
+    ol.navbreadcrum{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .dropdownwidth{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 576px){
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+
+@media (min-width: 992px){
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    }
+
+.ChartDiagram{
+    height: 300px !important;
+    width: 100% !important;
+}

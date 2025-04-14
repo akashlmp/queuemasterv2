@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Queuing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/Home.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  
+
+  <!-- ======= sidebar ======= -->
+  <div id="sidebar">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../template/queueing_design/assest/Logo=with-text.png" alt="" class="img-fluid ">
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../Template/Home.html" class="nav-link scrollto active NavHome"><i class="fa fa-home navIcons" aria-hidden="true"></i>
+            <span>Home</span></a></li>
+          <li><a href="./../template/queueing_design/statsRoom.html" class="nav-link scrollto  NavStats"><span class="material-symbols-outlined navIcons">
+            bar_chart
+            </span><span>Stats</span></a></li>
+
+          <li><a href="../template/queueing_design/queueRoom.html" class="nav-link scrollto  NavQueueRoom"><span class="material-symbols-outlined navIcons">
+            meeting_room
+            </span> <span>Queue Room</span></a></li>
+          <li>
+            <a href="../template/queueing_design/temp-Manage.html" class="nav-link scrollto NavTemplateManagement"><span class="material-symbols-outlined navIcons">
+              team_dashboard
+            </span> <span>Template Management</span></a>
+            <ul>
+                <li>
+                    <a href="../template/queueing_design/queueDesign.html" class="nav-link scrollto NavQueueDesign ps-5"><span class="material-symbols-outlined navIcons">
+                        draw
+                        </span>
+                  <span>Queue Design</span></a>
+                </li>
+                <li>
+                    <a href="../template/queueing_design/in-out-rule.html" class="nav-link scrollto NavInOutRules ps-5"><span class="material-symbols-outlined navIcons">
+                        rule
+                        </span>
+                   <span>In / Out Rules</span></a>
+                </li>
+                <li>
+                    <a href="#hero" class="nav-link scrollto NavSMSEmailNotice ps-5"><i class="fa fa-envelope navIcons" aria-hidden="true"></i>
+                  <span>SMS / Email Notice</span></a>
+                </li>
+              </ul>
+            </li>
+          <li><a href="#services" class="nav-link scrollto NavDeveloper "><i class="fa fa-code navIcons" aria-hidden="true"></i>
+            <span>Developer</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </div>
+  <!-- End sidebar -->
+  <header id="header">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+
+            </div>
+            <div class="sideContent d-flex align-items-center justify-content-between">
+                <!-- ======= Mobile nav toggle button ======= -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <div class="nav-item dropdown">
+                          <div class="me-5" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="../template/queueing_design/assest/profile.png" alt="Profile Icon" class="profile-icon profilewidth me-1">
+                              <!-- Add user's name or any identifier -->
+                          <span class="me-1">Vaishnavi</span>
+                          <button class="btn btn-link me-1">
+                            <span class="material-symbols-outlined dropbutton">
+                             expand_more
+                            </span>
+                        </button>
+                          </div>
+                          <ul class="dropdown-menu NavDropdown" aria-labelledby="profileDropdown">
+                              <li>
+                                <a class="dropdown-item" href="../template/queueing_design/userProfile.html">
+                                  <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined pe-2"> person</span>
+                                    <span>My profile</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li>
+                                <a class="dropdown-item" href="../template/queueing_design/staffAccessManagement.html">
+                                  <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined pe-2">groups</span>
+                                    <span>Staff access management<span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li>
+                                <div class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined pe-2">description</span>
+                                    <span>Subscription plan</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined logoutbutton pe-2">logout</span>
+                                    <span class="text-danger">Log out</span>
+                                  </div>
+                                </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+                <i class="bi bi-list mobile-nav-toggle d-xl-none">
+                  <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                </i>
+            </div>
+        </div>
+  </header>
+  <main id="main" class="bgmain">
+
+    <!-- =======  Section ======= -->
+    <section class="SectionPadding">
+        <div >
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-12 col-md-12  d-flex align-items-center">
+                  <h1>Welcome to QueueMaster</h1>
+                  <img src="../template/queueing_design/assest/hello.png" class="ms-4 helloimg">
+                </div>
+              </div>
+              <h6 class="text-muted mb-4">How could we help you ?</h6>
+            </div>
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-xl-12 col-md-12">
+                  <div class="card allcard">
+                    <div class="card-content">
+                      <div class="card-body statsCard">
+                        <div class="align-items-center d-flex">
+                          <span class="material-symbols-outlined QueueMasterIcon staticon">
+                            bar_chart
+                          </span>
+                          <h4 class="ms-2 mb-0 QueueMasterheading stattext">Stats</h4>
+                        </div>
+                        <div class="media-body">
+                          <p class="mb-0 pt-2 pb-3">Real-Time insights with comprehensive analytics showcaing your queue's performance.</p>
+                        </div>
+                        <div class="align-self-center">
+                          <a href="../template/queueing_design/statsRoom.html">
+                            <button class="btn btn-primary statbutton">Go</button>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-xl-12 col-md-12">
+                  <div class="card allcard">
+                    <div class="card-content">
+                      <div class="card-body queueCard">
+                        <div class="align-items-center d-flex">
+                          <span class="material-symbols-outlined QueueMasterIcon queueicon">
+                            meeting_room
+                            </span>
+                          <h4 class="ms-2 mb-0 queuetext QueueMasterheading">Queue Room</h4>
+                        </div>
+                        <div class="media-body">
+                          <p class="mb-0 pt-2 pb-3">Setup and customize queueing rooms to match your specific needs.</p>
+                        </div>
+                        <div class="align-self-center">
+                          <a href="../template/queueing_design/queueRoom.html">
+                            <button class="btn btn-primary queuebutton">Go</button>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-xl-12 col-md-12">
+                  <div class="card allcard">
+                    <div class="card-content">
+                      <div class="card-body tempCard">
+                        <div class="align-items-center d-flex">
+                          <span class="material-symbols-outlined QueueMasterIcon tempicon">
+                            team_dashboard
+                          </span> 
+                          <h4 class="ms-2 mb-0 temptext QueueMasterheading">Template Management</h4>
+                        </div>
+                        <div class="media-body">
+                          <p class="mb-0 pt-2 pb-3">Manage design template in / out rules and notitfications.</p>
+                        </div>
+                        <div class="align-self-center">
+                          <a href="../template/queueing_design/temp-Manage.html">
+                            <button class="btn btn-primary tempbutton">Go</button>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-xl-12 col-md-12">
+                  <div class="card allcard">
+                    <div class="card-content">
+                      <div class="card-body devCard">
+                        <div class="align-items-center d-flex">
+                          <i class="fa fa-code developericon QueueMasterIcon" aria-hidden="true"></i>
+                          <h4 class="ms-2 mb-0 devtext QueueMasterheading">Developer</h4>
+                        </div>
+                        <div class="media-body">
+                          <p class="mb-0 pt-2 pb-3">API documentation, integration guides and developer tools,</p>
+                        </div>
+                        <div class="align-self-center">
+                          <a href="#">
+                            <button class="btn btn-primary devbutton">Go</button>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- End About Section -->
+  </main>
+  <!-- End #main -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/main.js "></script>
+
+</body>
+
+</html>

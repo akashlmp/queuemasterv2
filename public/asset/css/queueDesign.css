@@ -1,0 +1,186 @@
+.queueDesignicon {
+    color: #FFAA00;
+    font-size: 30px;
+}
+
+.bgmain {
+    background-color: #F3F5F9;
+    min-height: 100vh;
+}
+
+.allcard {
+    border: none;
+}
+
+.queueDesignText {
+    background: #FFAA00;
+    border-radius: 23px;
+    height: 25px;
+    line-height: 2px;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    font-size: 25px;
+    padding-right: 0.5rem;
+    color: #FFAA00;
+    content: "\f105";
+    font-family: 'FontAwesome';
+}
+
+
+.navbreadcrum {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 100%;
+    border-bottom: 3px solid #FFAA00;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.bgtable {
+    background-color: #F2EEEB;
+}
+
+.queueth,
+.textdata {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.spacetable {
+    white-space: nowrap;
+}
+
+.editicon {
+    color: #000000;
+}
+
+.editicon:active,
+.editicon:focus,
+.editicon:hover {
+    color: #000000;
+    ;
+}
+
+.none,
+.none:hover,
+.none:focus {
+    text-decoration: none;
+    color: #FFAA00;
+}
+
+nav.QueueBreadCrumb.queueDesignQueueRoom li.breadcrumb-item a {
+    background: #FFAA004D;
+    color: #FFAA00;
+}
+
+nav.QueueBreadCrumb.queueDesignQueueRoom .breadcrumb-item+.breadcrumb-item::before {
+    color: #FFAA00;
+}
+
+.spacetable {
+    white-space: nowrap;
+}
+
+.allcard .spacetable td {
+    background: #fff;
+    border-bottom: 4px solid #F3F5F9 !important;
+}
+
+img.queueProfielImg {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .stateText {
+
+        text-align: center;
+    }
+
+    .liveroom {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+#AdvanceSettingTable tbody {
+    position: relative;
+}
+
+.additionalPlustr {
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+}
+
+.additionalPlustr button {
+    padding: 4px;
+}
+
+.deleteBtnNew span.material-symbols-outlined {
+    color: #FFAA00;
+    margin-top: 10px;
+}
+.card-body.statsCard.infoCard .QueueMasterheading {
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    line-height: 1;
+}
+.card-body.statsCard.infoCard .QueueMasterIcon {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.card-body.statsCard.infoCard .QueueMasterIcon {
+    font-size: 20px !important;
+    color: #1458c2;
+}
+.card-body.statsCard.infoCard p {
+    font-size: 14px;
+}
+.card-body.statsCard.infoCard {
+    border-top: 4px solid #1458c2;
+    background-color: #edf4ff;
+    border-radius: 6px;
+}

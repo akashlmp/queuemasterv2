@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="homeDash.css" rel="stylesheet">
+    <link href="../../Template/clientSide/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="">
+    <link href="./css/userProfile.css" rel="stylesheet">
+    <title>Add staff</title>
+</head>
+
+<body>
+    <!-- ======= sidebar ======= -->
+    <div id="sidebar">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="../../template/queueing_design/assest/Logo=with-text.png" alt="" class="img-fluid ">
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="../../Template/Home.html" class="nav-link scrollto  NavHome"><i
+                                class="fa fa-home navIcons" aria-hidden="true"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="../../template/queueing_design/statsRoom.html"
+                            class="nav-link scrollto NavStats"><span class="material-symbols-outlined navIcons">
+                                bar_chart
+                            </span><span>Stats</span></a></li>
+                    <li><a href="#" class="nav-link scrollto  NavQueueRoom"><span
+                                class="material-symbols-outlined navIcons">
+                                meeting_room
+                            </span> <span>Queue Room</span></a></li>
+                    <li>
+                        <a href="#portfolio" class="nav-link scrollto NavTemplateManagement"><span
+                                class="material-symbols-outlined navIcons">
+                                team_dashboard
+                            </span> <span>Template Management</span></a>
+                        <ul>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavQueueDesign ps-5"><span
+                                        class="material-symbols-outlined navIcons">
+                                        draw
+                                    </span>
+                                    <span>Queue Design</span></a>
+                            </li>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavInOutRules ps-5"><span
+                                        class="material-symbols-outlined navIcons">
+                                        rule
+                                    </span>
+                                    <span>In / Out Rules</span></a>
+                            </li>
+                            <li>
+                                <a href="#hero" class="nav-link scrollto NavSMSEmailNotice ps-5"><i
+                                        class="fa fa-envelope navIcons" aria-hidden="true"></i>
+                                    <span>SMS / Email Notice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#services" class="nav-link scrollto NavDeveloper "><i class="fa fa-code navIcons"
+                                aria-hidden="true"></i>
+                            <span>Developer</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </div>
+    <!-- End sidebar -->
+    <header id="header">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+
+            </div>
+            <div class="sideContent d-flex align-items-center justify-content-between">
+                <!-- ======= Mobile nav toggle button ======= -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <div class="me-5" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../../template/queueing_design/assest/profile.png" alt="Profile Icon"
+                                    class="profile-icon me-1 profilewidth">
+                                <!-- Add user's name or any identifier -->
+                                <span class="me-1">Vaishnavi</span>
+                                <button class="btn btn-link me-1">
+                                    <span class="material-symbols-outlined dropbutton">
+                                        expand_more
+                                    </span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu NavDropdown" aria-labelledby="profileDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2"> person</span>
+                                            <span>My profile</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2">groups</span>
+                                            <span>Staff access management<span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <div class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined pe-2">description</span>
+                                            <span>Subscription plan</span>
+                                        </div>
+                                        </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-symbols-outlined logoutbutton pe-2">logout</span>
+                                            <span class="text-danger">Log out</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-xl-none">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </i>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="bgmain">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-xl-8 col-md-12 d-flex userProfileicon">
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb navbreadcrum">
+                            <li class="breadcrumb-item"><a href="../../Template/Home.html">
+                                    <i class="fa fa-home userProfileicon" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="breadcrumb-item " aria-current="page">
+                                <a href="../queueing_design/staffAccessManagement.html" class="none">
+                                    <div class="userProfileText text-center">Staff Access Management</div>
+                                </a>
+                            <li class="breadcrumb-item " aria-current="page">
+                                <div class="userProfileText text-center">Add Staff</div>
+                            </li>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class=" card card-body">
+                <form action="staffAccessManagement.html">
+                    <!-- first row -->
+                    <div class="row m-0">
+                        <div class="col-md-11 ps-0 pt-2 pb-4">
+                            <div class="LeftGreenborder ps-4">
+                                <h5 class="FormHeading"><b>Staff Information</b></h5>
+                                <p class="FormPara">Name</p>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control " id="name" placeholder="staff Name" name="name">
+                                </div>
+
+                                <p class="FormPara">Email</p>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control " id="email" placeholder="email" name="email">
+                                </div>
+
+                                <p class="FormPara">Role</p>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control " id="role" placeholder="role" name="role">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- second row -->
+                    <div class="row m-0">
+                        <div class="col-md-12 ps-0 pt-2 pb-4">
+                            <div class="LeftGreenborder ps-4">
+                                <h4 class="FormHeading"><b>Permission</b></h4>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead class="table">
+                                            <tr>
+                                                <th class="border-0 py-0 tableheadFirst ">
+                                                    <h6 class="addstaffheading"></h6>
+                                                </th>
+                                                <th class="border-0 py-0 ">
+                                                    <h6 class="addstaffheading">No Access</h6>
+                                                </th>
+                                                <th class="border-0 py-0 ">
+                                                    <h6 class="addstaffheading">Read Only</h6>
+                                                </th>
+                                                <th class="border-0 py-0 ">
+                                                    <h6 class="addstaffheading">Full Access</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- permission 1 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata"> Dashboard</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="dashboard">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="dashboard">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="dashboard">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 2 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata"> Monitor (Cyclothon Public)
+                                                        </h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Monitor">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Monitor">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Monitor">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 3 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata"> Monitor (Marathon)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Marathon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Marathon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Marathon">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 4 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Monitor (Cyclothon VVIP)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Cyclothon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Cyclothon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Cyclothon">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 5 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Queue Room
+                                                            (Cyclothon Public)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonPublic">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonPublic">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonPublic">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 6 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Queue Room
+                                                            (Marathon)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="queueRoomMarathon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="queueRoomMarathon">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="queueRoomMarathon">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 7 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Queue Room
+                                                            (Cyclothon VVIP)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonVVIP">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonVVIP">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="CyclothonVVIP">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 8 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Queue Desgin (Design
+                                                            1)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Design1">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Design1">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Design1">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 9 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Queue Desgin
+                                                            (Testing)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Testing">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Testing">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Testing">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 10 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Trigger Logic
+                                                            (Trigger all)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Trigger">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Trigger">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Trigger">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 11 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Trigger Logic (only
+                                                            for VIP)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="TriggerLogic">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="TriggerLogic">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="TriggerLogic">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 12 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Bypass Rule (Admin
+                                                            all)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="BypassRule">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="BypassRule">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="BypassRule">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 13 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Manage - Bypass Rule (VIP
+                                                            only)</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="VIPonly">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="VIPonly">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="VIPonly">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 14 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">System - Integration</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Integration">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Integration">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Integration">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 15 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">My Profile</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Profile">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Profile">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Profile">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 16 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">User Management</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="UserManagement">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="UserManagement">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="UserManagement">
+                                                </td>
+                                            </tr>
+
+                                            <!-- permission 17 -->
+                                            <tr>
+                                                <td class="border-0 d-flex">
+                                                    <div>
+                                                        <h6 class="mt-2 mb-0 Ruletextdata">Subscription Plan</h6>
+                                                    </div>
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Subscription">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Subscription">
+                                                </td>
+
+                                                <td class="border-0 text-center">
+                                                    <input type="radio" name="Subscription">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- button -->
+                    <div class="row m-0 mt-2">
+                        <div class="col-md-12 ps-0 pt-2 pb-4 ">
+                            <div class=" d-flex align-items-center justify-content-end">
+                                <button
+                                    class="btn bsb-btn-2xl subbtnbtn submitbtn d-flex align-items-center justify-content-center"
+                                    type="submit">
+                                    Save
+                                    <span class="material-symbols-outlined ms-2">save</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="../../Template/clientSide/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+nav.QueueBreadCrumb.emailTempQueueRoom li.breadcrumb-item a {
+    background: #FFAA004D;
+    color: #FFAA00;
+}
+
+.queueth, .textdata {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+table.spacetable th, table.spacetable td {
+    padding: 14px 20px !important;
+}
+.bgtable {
+    background-color: #F2EEEB;
+}
+.spacetable {
+    white-space: nowrap;
+}
+.allcard .spacetable td {
+    background: #fff;
+    border-bottom: 4px solid #F3F5F9 !important;
+}
+img.queueProfielImg {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+a.editicon, a.editicon:active, a.editicon:focus, a.editicon:hover {
+    color: #000000;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 100%;
+    border-bottom: 3px solid #FFAA00;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.form-group.has-search{
+	position: relative;
+}

@@ -1,0 +1,158 @@
+
+.allcard{
+    border: none;
+}
+/* stat */
+.statsCard{
+    border-top: 4px solid #FF397B;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.staticon{
+    line-height: 27px;
+    color: #FF397B;
+}
+.stattext{
+    color: #FF397B;
+}
+.btn.statbutton{
+    border-radius: 4px;
+    background-color: #FF397B;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.btn.statbutton:hover {
+    background-color: #FF397B;
+}
+.btn.statbutton:first-child:active, .btn.statbutton:focus{
+    background-color: #FF397B;
+}
+/* queue */
+.queueCard{
+    border-top: 4px solid #3D51E4;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.queueicon{
+    line-height: 27px;
+    color: #3D51E4;
+    font-size: 20px;
+}
+.queuetext{
+    color: #3D51E4;
+}
+.btn.queuebutton{
+    border-radius: 4px;
+    background-color: #3D51E4;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.btn.queuebutton:first-child:active, .btn.queuebutton:focus, .btn.queuebutton:hover{
+    background-color: #3D51E4;
+}
+/* Template-management */
+.tempCard{
+    border-top: 4px solid #FFAA00;
+    ;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.tempicon{
+    line-height: 27px;
+    color: #FFAA00;
+    font-size: 20px;
+}
+.temptext{
+    color: #FFAA00;
+}
+.btn.tempbutton{
+    border-radius: 4px;
+    background-color: #FFAA00;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.btn.tempbutton:first-child:active, .btn.tempbutton:focus, .btn.tempbutton:hover {
+    background-color: #FFAA00;
+}
+/* developer */
+.devCard{
+    border-top: 4px solid #CA5426;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.devicon{
+    line-height: 27px;
+    color: #CA5426;
+    font-size: 20px;
+}
+.devtext{
+    color: #CA5426;
+}
+.btn.devbutton{
+    border-radius: 4px;
+    background-color: #CA5426;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.btn.devbutton:first-child:active, .btn.devbutton:focus, .btn.devbutton:hover {
+    background-color: #CA5426;
+}
+/* navbar */
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.dropbutton{
+    color: black;
+    width: 0px;
+    margin-right: 20px;
+}
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.logoutbutton{
+    color: black;
+}
+.QueueMasterheading{
+    font-family: Arial;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.developericon.QueueMasterIcon {
+    color: #CA5426;
+    font-size: 22px !important;
+}
+.QueueMasterIcon {
+    font-size: 26px !important;
+}
+.card-body.statsCard.infoCard{
+    border-top: 4px solid #1458c2;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.card-body.statsCard.infoCard .stattext{
+    color: #1458c2;
+}

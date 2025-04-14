@@ -1,0 +1,60 @@
+
+
+.bgmain{
+    background-color: #F3F5F9;
+    min-height: 100vh;
+}
+.allcard{
+    border: none;
+}
+
+.QueueMasterIcon {
+    font-size: 26px !important;
+}
+
+nav.QueueBreadCrumb.TempManageQueueRoom li.breadcrumb-item a {
+    background: #FFAA004D;
+    color: #FFAA00;
+}
+nav.QueueBreadCrumb.TempManageQueueRoom .breadcrumb-item+.breadcrumb-item::before{
+    color: #FFAA00;
+}
+.navbreadcrum {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.material-symbols-outlined {
+  /* font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24; */
+  font-weight: 500;
+}
+
+.tempCard{
+    border-top: 4px solid #FFAA00;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+
+.tempbutton{
+    border-radius: 4px;
+    background-color: #FFAA00;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.tempbutton:hover {
+    background-color: #FFAA00;
+}
+
+.tempbutton:first-child:active, .tempbutton:focus{
+    background-color: #FFAA00;
+}

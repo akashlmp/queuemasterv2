@@ -1,0 +1,188 @@
+button.QueueDeleteBtn {
+    border: 0;
+    background: transparent;
+}
+.queueDesignicon {
+    color: #0E793F;
+    font-size: 30px;
+}
+.bgmain{
+    background-color: #F3F5F9;
+    min-height: 100vh;
+}
+.allcard{
+    border: none;
+}
+.queueDesignText {
+    background: #0E793F1A;
+    border-radius: 23px;
+    height: 25px;
+    line-height: 2px;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 900;width: 100%;
+    margin-left: 30px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    font-size: 25px;
+    padding-right: 0.5rem;
+    color: #0E793F;
+    content: "\f105"; 
+    font-family: 'FontAwesome'; 
+}
+
+
+.navbreadcrum {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.LeftRedborder {
+    border-left: 4px solid #0E793F;
+}
+
+.submitbtn{
+    background-color: #159AA1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: fit-content
+   
+}
+
+button.btn.bsb-btn-2xl.subbtnbtn{
+    font-family: Arial;
+    font-weight: 700;
+    size: 16px;
+    line-height: 18.4px;
+    color: white;
+}
+.editBtn, .editBtn:hover {
+    background: #159AA1;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #159AA1;
+    color: #fff;
+}
+.saveBtn, .saveBtn:hover {
+    background: #159AA1;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #159AA1;
+    color: #fff;
+}
+nav.QueueBreadCrumb.TempManageQueueRoom li.breadcrumb-item a {
+    background: #0E793F1A;
+    color: #0E793F;
+}
+nav.QueueBreadCrumb.TempManageQueueRoom .breadcrumb-item+.breadcrumb-item::before{
+    color: #0E793F;
+}
+h5.FormHeading {
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.LevelNotifyCheckBox label.form-check-label {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 6px;
+}
+.form-check input.queueCheckBox {
+    background-color: #159AA1;
+    accent-color: #159AA1;
+}
+.form-check input.queueCheckBox {
+    width: unset;
+    position: relative;
+    height: 22px;
+    width: 22px;
+}
+.LevelNotifyCheckBox .form-check {
+    display: flex;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.AdvanceSettingBox {
+    background: #E9ECEF;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.AdvanceSettingBox {
+    display: none;
+}
+.AdvanceSettingBox p.FormPara {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.AdvanceSettingBox td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.AdvanceSettingBox .form-control.FormInputBox {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 2px solid #ADB5BD;
+}
+.AdvanceSettingBox .form-control.FormInputBox {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 2px solid #ADB5BD;
+}
+button.DeleteTableRow, button.AddTableRow {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ADB5BD;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+}
+@media (max-width: 992px) {
+    /* End Scroll bar */
+    .AdvanceSettingBox .form-control.FormInputBox{
+        width: 150px;
+    }
+}

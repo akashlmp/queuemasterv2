@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .progress{
+            width: 400px; 
+        }
+        form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        width: 94%;
+        background: #f1f1f1;
+        }
+
+        form.example button {
+        float: left;
+        padding: 10px 16px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        }
+
+        form.example button:hover {
+        background: #0b7dda;
+        }
+
+        form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        @media (max-width:768px)
+        {
+            .banner-container .banner .woman{
+                display: none;
+            }
+            .progress{
+                width: 285px;
+                position: relative;
+                bottom: 12px;
+            }
+            .content{
+                margin-bottom: 50%;
+            }
+            .banner{
+                padding: 10px;
+            }
+            .banner-container.container-fluid{
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="banner-container container-fluid" style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%;">
+        <div class="banner" style="background: url('https://queuing.walkingdreamz.com/public/asset/img/Rectangle 354.png') no-repeat center center fixed; background-size: cover; color: #000000; border-radius: 5px;  display: flex; align-items: center; justify-content: center; flex-wrap:wrap; overflow: hidden; width: 100%; height: 100%;">
+            <div class="shoe" style="flex:1 1 250px; padding: 15px; text-align: center; ">
+                <!-- <img src="../public/asset/img/shoe.png" alt="logo" style="width: 70%;"> -->
+            </div>
+
+            <div class="content" style="background:white; border-radius:6px; flex:1 1 250px; text-align: center; padding: 10px; text-transform: uppercase;">
+            <div style="margin-top: 15px;">
+                 <img src="../public/asset/img/logo.png" alt="logo" style="width: 70%;">
+                 <div style="padding: 30px;
+                 background: rgb(162, 162, 226);
+                 margin-top: 20px; margin-bottom: 15px;">
+                    <span style="color: #080808; font-size: 14px; margin: 10px;">update will be shown here</span>
+                 </div>
+                <h3 style="color: #3360b4; font-size: 20px; margin: 15px; margin-top: 10px;">Enter your access code</h3>
+
+
+                <form class="example" action="#" style="margin:auto;max-width:300px">
+                    <div class="searchForm" style="position: relative; margin-top: 19px;"><input type="text" placeholder="Search.." name="search2">
+                    <button type="submit" style="position: absolute;
+                    right: -3px;
+                    top: 0px;"><i class="fa fa-search"></i>Next</button></div>
+                  </form>
+                <p>07/12/2024 12:04 HKT</p>
+              </div>
+
+            </div>
+            <div class="woman" style="position: relative; bottom: -33px; padding: 10px; flex: 1 1 250px;">
+                <!-- <img src="../public/asset/img/women.png" alt="" style="width: 100%;"> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Queuing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+
+  <!-- Css -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href='./css/boxicons.min.css' rel='stylesheet'>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/queueRoom.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
+
+
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= sidebar ======= -->
+  <div id="sidebar">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../../public/asset/img/Logo=with-text.png" alt="" class="img-fluid ">
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#Home" class="nav-link scrollto active NavHome"><i class="fa fa-home navIcons"
+                aria-hidden="true"></i>
+              <span>Home</span></a></li>
+          <li><a href="#Stats" class="nav-link scrollto  NavStats"><span class="material-symbols-outlined navIcons">
+                bar_chart
+              </span><span>Stats</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto  NavQueueRoom"><span
+                class="material-symbols-outlined navIcons">
+                meeting_room
+              </span> <span>Queue Room</span></a></li>
+          <li>
+            <a href="#portfolio" class="nav-link scrollto NavTemplateManagement"><span
+                class="material-symbols-outlined navIcons">
+                team_dashboard
+              </span> <span>Template Management</span></a>
+            <ul>
+              <li>
+                <a href="#hero" class="nav-link scrollto NavQueueDesign ps-5"><span
+                    class="material-symbols-outlined navIcons">
+                    draw
+                  </span>
+                  <span>Queue Design</span></a>
+              </li>
+              <li>
+                <a href="#hero" class="nav-link scrollto NavInOutRules ps-5"><span
+                    class="material-symbols-outlined navIcons">
+                    rule
+                  </span>
+                  <span>In / Out Rules</span></a>
+              </li>
+              <li>
+                <a href="#hero" class="nav-link scrollto NavSMSEmailNotice ps-5"><i class="fa fa-envelope navIcons"
+                    aria-hidden="true"></i>
+                  <span>SMS / Email Notice</span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#services" class="nav-link scrollto NavDeveloper "><i class="fa fa-code navIcons"
+                aria-hidden="true"></i>
+              <span>Developer</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </div>
+  <!-- End sidebar -->
+  <header id="header">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="">
+
+      </div>
+      <div class="sideContent d-flex align-items-center justify-content-between">
+        <!-- ======= Mobile nav toggle button ======= -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <div class="nav-item dropdown">
+              <div class="me-5" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../../public/asset/img/profile.png" class="profilewidth img-fluid" alt="Profile Icon" class="profile-icon me-1">
+                <!-- Add user's name or any identifier -->
+                <span class="me-1">Vaishnavi</span>
+                <button class="btn btn-link me-1">
+                  <span class="material-symbols-outlined dropbutton">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <ul class="dropdown-menu NavDropdown" aria-labelledby="profileDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined pe-2"> person</span>
+                      <span>My profile</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined pe-2">groups</span>
+                      <span>Staff access management</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <div class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined pe-2">description</span>
+                      <span>Subscription plan</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined logoutbutton pe-2">logout</span>
+                      <span>Log out</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-xl-none">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </i>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="bgmain">
+    <section class="SectionPadding">
+      <!-- =======  Section ======= -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <nav aria-label="breadcrumb" class="QueueBreadCrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item Homebreadcrumb"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Queue Room</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">SCHK Marathon</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs QueueingTabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-links active" id="step1-tab" data-bs-toggle="tab" data-bs-target="#step1"
+                  type="button" role="tab" aria-controls="step1" aria-selected="true">BASIC INFO</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-links" id="step2-tab" data-bs-toggle="tab" data-bs-target="#step2" type="button"
+                  role="tab" aria-controls="step2" aria-selected="false">CONFIGURATION</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-links" id="step3-tab" data-bs-toggle="tab" data-bs-target="#step3" type="button"
+                  role="tab" aria-controls="step3" aria-selected="false">DESIGN</button>
+              </li>
+            </ul>
+            <div class="tab-content card py-3 px-2" id="myTabContent">
+              <form class="px-2">
+                <div class="tab-pane fade show active" id="step1" role="tabpanel" aria-labelledby="step1-tab">
+
+                  <div class="row m-0">
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftRedborder ps-4">
+                        <h5 class="FormHeading"><b>What’s the name of this queue room?</b></h5>
+                        <p class="FormPara">The name is for your own reference only.</p>
+                        <div class="mb-3">
+                          <input type="text" class="form-control FormInputBox" id="roomname"
+                            placeholder="Queue room name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>What time zone is the queue room based on?</b></h5>
+                        <p class="FormPara">This would affect the start and end time, as well as the reporting.</p>
+                        <div class="mb-3">
+                          <div class="custom-dropdown">
+                            <select class="form-select form-control FormInputBox TimezoneSelect custom-select"
+                              aria-label="time Zone" name="timezone" id="timezone">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>When does the queue room start and end?</b></h5>
+                        <p class="FormPara">Queuing Starts:</p>
+                        <div class="d-flex align-items-center justify-content-start QueueDataCheckboxes">
+                          
+                          <div class="form-check mb-3 ps-0">
+                            <input type="radio" id="Startnow" class="queueCheckBox" name="favTime" value="option1">
+                            <label for="Startnow" class="form-check-label">Start now</label>
+                          </div>
+                          <!-- Hidden input field to store the timezone -->
+                          <input type="hidden" id="dateValue" name="datezone" value="">
+                          <input type="hidden" id="timeValue" name="timezone" value="">
+                          <div class="form-check mb-3 ">
+                            <input type="radio" id="CustomDateTime" class="queueCheckBox" name="favTime" value="option2">
+                            <label for="CustomDateTime" class="form-check-label"> Custom date and time</label>
+                          </div>
+                        </div>
+                        <div id="CustomDateTimeId" class="CustomDateTime" >
+                          <div class="row">
+                              <div class="col-md-3 col-sm-3 col-xs-12">
+                                  <!-- <label for="datepicker">Select Date:</label> -->
+                                  <div class="DateTimeIconBox">
+                                    <span class="material-symbols-outlined DateTimeIcon">calendar_month</span>
+                                    <input type="text" id="datepicker" class="form-control FormInputBox">
+                                    <span class="material-symbols-outlined DateTimeRightIcon">
+                                      expand_more
+                                      </span>
+                                  </div>
+                              </div>
+                              <div class="col-md-3 col-sm-3 col-xs-12">
+                                <!-- <label for="datepicker">Select Date:</label> -->
+                                <div class="inputfield inputfieldTimepikcer DateTimeIconBox">
+                                  <span class="material-symbols-outlined DateTimeIcon">
+                                    pace
+                                    </span>
+                                  <input type="time" id="timePicker" class="form-control form-select FormInputBox" value="13:30">
+                                  <span class="material-symbols-outlined DateTimeRightIcon">
+                                    expand_more
+                                    </span>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-6 col-xs-0">
+
+                              </div>
+                          </div>
+                        </div>
+                        <br>
+                        <p class="FormPara">Queuing Ends:</p>
+                        <div class="d-flex align-items-center justify-content-start QueueDataCheckboxes">
+                          
+                          <div class="form-check mb-3 ps-0">
+                            <input type="radio" id="QueuingEnds" class="queueCheckBox" name="fav_language" value="option3">
+                            <label for="QueuingEnds" class="form-check-label">End now</label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input type="radio" id="Customdateandtime" class="queueCheckBox" name="fav_language" value="option4">
+                            <label for="Customdateandtime" class="form-check-label">Custom date and time</label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input type="radio" id="HaveEndDateTime" class="queueCheckBox" name="fav_language" value="option5">
+                            <label for="HaveEndDateTime" class="form-check-label">Do not have end date and time</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 d-flex text-end justify-content-end">
+                      <button class="btn btn-primary d-flex align-items-center justify-content-center nextBtn"
+                        type="button" onclick="MultistepForm.nextStep(1)">Next <span
+                          class="material-symbols-outlined ps-2">arrow_forward_ios</span></button>
+                    </div>
+                  </div>
+                  <!-- Next Prev Buttons -->
+                </div>
+                <!-- End Tab 1 -->
+                <div class="tab-pane fade" id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                  <div class="row m-0">
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>Who will redirect to the queue room?</b></h5>
+
+                        <div class="mb-3">
+                          <p class="FormPara pt-2 mb-2">Please select</p>
+                          <select class="TempCreateSlt">
+                            <option>Create new template</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <p class="FormPara">Template name</p>
+                          <input type="text" class="form-control FormInputBox" id="roomname"
+                            placeholder="Supreme SS 2024">
+                        </div>
+                        <div class="mb-3">
+                          <p class="FormPara">Input URL:</p>
+                          <input type="link" class="form-control FormInputBox" id="roomname"
+                            placeholder="https://supreme.com/newrelease/apr2024">
+                        </div>
+                        <div class="mb-3 LevelNotifyCheckBox">
+                          <p class="FormPara">To what level would you like the protection?</p>
+                          <div class="form-check mb-3 ps-0">
+
+                            <input type="radio" id="ProtectRedioURL" class="queueCheckBox" name="fav_language"
+                              value="option1">
+                            <label for="ProtectRedioURL" class="form-check-label">Protect exact URL only.</label>
+                          </div>
+                          <div class="form-check mb-3 ps-0">
+                            <input type="radio" id="ProtectRedioSite" class="queueCheckBox" name="fav_language"
+                              value="option1">
+                            <label for="ProtectRedioSite" class="form-check-label">Protect all sites under the
+                              domain.</label>
+
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center advanceSettngToggle mb-2">
+                          <p class="FormPara mb-0">Advance settings</p>
+                          <div class="form-checks form-switch">
+                            <input class="form-check-input" type="checkbox" id="AdvanceSettingCheckBox">
+                          </div>
+                        </div>
+                        <div class="AdvanceSettingBox">
+                          <p class="FormPara">On top of the above setting, visitors would go to the queuing room if</p>
+                          <div class="table-responsive">
+                            <table id="AdvanceSettingTable">
+                              <tbody>
+                                <tr>
+                                  <td></td>
+                                  <td>
+                                    <select class="form-select form-control FormInputBox"
+                                      aria-label="Default select example">
+                                      <option selected>Page Path</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="form-select form-control FormInputBox">
+                                      <option selected>Contains</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <input type="text" class="form-control FormInputBox" id="roomname"
+                                      placeholder="registration">
+                                  </td>
+                                  <td>
+                                    <button id="addButton" class="AddTableRow" type="button"><span
+                                        class="material-symbols-outlined">add</span></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Tab 2 Section 1 -->
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>What is the maximum traffic to enter your protected site?</b></h5>
+                        <p class="FormPara">Maximum number of visitors allowed to access your website per minute.</p>
+
+                        <div class="TotalVisitortxt">
+                          I want to allow <span><input type="text" class="TotalVisitor"
+                              placeholder="300"></span>visitors to enter the
+                          protected site per minute.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Tab 2 Section 2 -->
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>Do you want to allow people to bypass the queue room?</b></h5>
+                        <p class="FormPara">Such as allowing VIP to enter the site, or allow admins to monitor even
+                          during peak period.</p>
+
+                        <div class="d-flex align-items-center QueueDataCheckboxes">
+                          <div class="form-check mb-3 ps-0 ">
+
+                            <input type="radio" id="SetupBypass" class="queueCheckBox" name="fav_language"
+                              value="option1">
+                            <label for="SetupBypass" class="form-check-label">I want to setup bypass</label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input type="radio" id="NotSetupBypass" class="queueCheckBox" name="fav_language"
+                              value="option1">
+                            <label for="NotSetupBypass" class="form-check-label">I do not want to setup bypass</label>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="SelectTemplate" class="FormInputBoxLabel">Please select</label>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <select class="form-select FormInputBox" id="SelectTemplate">
+                                <option>Create new template</option>
+                              </select>
+                            </div>
+                            <div class="col-md-9">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="templateName" class="FormInputBoxLabel">Template name</label>
+                          <input type="text" class="form-control FormInputBox" id="templateName"
+                            placeholder="Supreme SS 2024">
+                        </div>
+                        <div class="form-group">
+                          <label for="Bypassurl" class="FormInputBoxLabel">Bypass URL</label>
+                          <input type="link" class="form-control FormInputBox" id="Bypassurl"
+                            placeholder="https://supreme.com/newrelease/apr2024">
+                        </div>
+                        <div class="d-flex align-items-center mt-3 downloadFlex">
+                          <div class="DownloadExcel me-3">
+                            <button class="btn DownloadExcelbtn d-flex align-items-center justify-content-between"><span
+                                class="material-symbols-outlined pe-3">add</span> Download Excel Template</button>
+                          </div>
+                          <div class="UploadExcel">
+                            <input id="upload" hidden type="file" />
+                            <label for="upload"
+                              class="btn UploadExcelbtn d-flex align-items-center justify-content-between"
+                              tabindex="0"><span class="material-symbols-outlined pe-3">add</span> Upload Excel</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- End Tab 2 Section 3 -->
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>Do you want to setup pre-queue?</b></h5>
+                        <p class="FormPara">A pre-queue can prevents your website crashes from early demand and delivers
+                          online fairness.</p>
+                        <div class="d-flex align-items-center QueueDataCheckboxes">
+                          <div class="form-check mb-3 ps-0">
+
+                            <input type="radio" id="PreSetupBypass" class="queueCheckBox" name="fav_language"
+                              value="option1">
+                            <label for="PreSetupBypass" class="form-check-label">I want to setup bypass</label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input type="radio" id="PreNotSetupBypass" class="queueCheckBox" name="fav_language"
+                              value="option2">
+                            <label for="PreNotSetupBypass" class="form-check-label">I do not want to setup
+                              bypass</label>
+
+                          </div>
+                        </div>
+                        <div class="TotalVisitortxt ps-4">
+                          Pre-queue starts:
+                        </div>
+                        <div class="TotalVisitortxt pt-2 ps-4">
+                          <span><input type="text" class="TotalVisitor ms-0 " placeholder="60"></span>minutes before the
+                          queuing start time.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Tab 2 Section 4 -->
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 d-flex text-end justify-content-end">
+                      <button class="btn btn-secondary d-flex align-items-center justify-content-center me-2 backBtn"
+                        type="button" onclick="MultistepForm.prevStep(2)"><span class="material-symbols-outlined pe-2">
+                          arrow_back_ios_new
+                        </span> Back</button>
+                      <button class="btn btn-primary d-flex align-items-center justify-content-center nextBtn"
+                        type="button" onclick="MultistepForm.nextStep(2)">Next <span
+                          class="material-symbols-outlined ps-2">
+                          arrow_forward_ios
+                        </span></button>
+                    </div>
+                  </div>
+                  <!-- Next Prev Buttons -->
+                </div>
+
+                <!-- End Tab 2 -->
+                <div class="tab-pane fade" id="step3" role="tabpanel" aria-labelledby="step3-tab">
+                  <div class="row m-0">
+                    <div class="col-md-12 ps-0 pt-2 pb-5">
+                      <div class="LeftGreenborder ps-4">
+                        <h5 class="FormHeading"><b>Queue room design</b></h5>
+                        <div class="row mt-3">
+                          <div class="col-md-3">
+                            <select class="form-select FormInputBox" aria-label="Default select example">
+                              <option selected>Create new template</option>
+                            </select>
+                          </div>
+                          <div class="col-md-9"></div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="SelectTemplate" class="FormInputBoxLabel">Template name</label>
+                          <input type="text" class="form-control FormInputBox" placeholder="Supreme SS 2024">
+                        </div>
+
+                        <p class="FormPara pt-3 languagePara">What language do you want the queue room to display?</p>
+                        <div class="row mb-3">
+                          <div class="col-md-5">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="d-flex align-items-center">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label mt-1" for="flexCheckDefault">
+                                  Set as default
+                                </label>
+                              </div>
+                              <button class="QueueDeleteBtn ms-4 mt-2" type="btn"><span
+                                  class="material-symbols-outlined">delete</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-5">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Chinese</option>
+                            </select>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="d-flex align-items-center">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label mt-1" for="flexCheckDefault">
+                                  Set as default
+                                </label>
+                              </div>
+                              <button class="QueueDeleteBtn ms-4 mt-2" type="btn"><span
+                                  class="material-symbols-outlined">delete</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-5">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Please select...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-7">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button type="button" class="btn editBtn">Edit <i class="fa fa-pencil-square-o ps-1"
+                                aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Tab 3 Section 1 -->
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 d-flex text-end justify-content-end">
+                      <button type="button"
+                        class="btn btn-secondary d-flex align-items-center justify-content-center me-2 backBtn"
+                        onclick="MultistepForm.prevStep(3)"><span class="material-symbols-outlined pe-2">
+                          arrow_back_ios_new
+                        </span> Back</button>
+                      <button type="button"
+                        class="btn btn-primary d-flex align-items-center justify-content-center saveBtn"
+                        onclick="MultistepForm.nextStep(3)">Save <span class="material-symbols-outlined ps-2">
+                          save
+                        </span></button>
+                    </div>
+                  </div>
+                  <!-- Next Prev Buttons -->
+
+                </div>
+                <!-- End Tab 3 -->
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- End  Section -->
+    </section>
+  </main>
+
+  <!-- End #main -->
+  <!-- Include jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/moment-timezone-with-data.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/queueRoom.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+</body>
+
+</html>

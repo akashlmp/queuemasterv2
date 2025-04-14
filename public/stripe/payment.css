@@ -1,0 +1,15 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Inter;
+}
+.btn-bg{
+	background-color:#4169E1!important;
+}
+.payment1{
+	height: 100vh!important;
+}
+.img{
+	width: 33%!important;
+}

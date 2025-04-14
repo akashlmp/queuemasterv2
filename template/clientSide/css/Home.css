@@ -1,0 +1,148 @@
+
+.allcard{
+    border: none;
+}
+/* stat */
+.statsCard{
+    border-top: 6px solid #952FBF;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.staticon{
+    line-height: 27px;
+    color: #952FBF;
+}
+.stattext{
+    color: #952FBF;
+}
+.statbutton{
+    border-radius: 4px;
+    background-color: #952FBF;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.statbutton:hover {
+    background-color: #952FBF;
+}
+.statbutton:first-child:active, .statbutton:focus{
+    background-color: #952FBF;
+}
+/* queue */
+.queueCard{
+    border-top: 4px solid #159AA1;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.queueicon{
+    line-height: 27px;
+    color: #159AA1;
+    font-size: 20px;
+}
+.queuetext{
+    color: #159AA1;
+}
+.queuebutton{
+    border-radius: 4px;
+    background-color: #159AA1;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.queuebutton:first-child:active, .queuebutton:focus,.queuebutton:hover{
+    background-color: #159AA1;
+}
+/* Template-management */
+.tempCard{
+    border-top: 6px solid #0E793F;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.tempicon{
+    line-height: 27px;
+    color: #0E793F;
+    font-size: 20px;
+}
+.temptext{
+    color: #0E793F;
+}
+.tempbutton{
+    border-radius: 4px;
+    background-color: #0E793F;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.tempbutton:first-child:active, .tempbutton:focus, .tempbutton:hover {
+    background-color: #0E793F;
+}
+/* developer */
+.devCard{
+    border-top: 6px solid #CA5426;
+    border-bottom:none ;
+    border-left:none ;
+    border-right: none;
+}
+.devicon{
+    line-height: 27px;
+    color: #CA5426;
+    font-size: 20px;
+}
+.devtext{
+    color: #CA5426;
+}
+.devbutton{
+    border-radius: 4px;
+    background-color: #CA5426;
+    border: none;
+    width: 60px;
+    height: 30px;
+    line-height: 3px;
+    font-weight: 700;
+}
+.devbutton:first-child:active, .devbutton:focus, .devbutton:hover {
+    background-color: #CA5426;
+}
+/* navbar */
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.dropbutton{
+    color: black;
+    width: 0px;
+    margin-right: 20px;
+}
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.logoutbutton{
+    color: red;
+}
+.QueueMasterheading{
+    font-family: Arial;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.developericon.QueueMasterIcon {
+    color: #CA5426;
+    font-size: 22px !important;
+}
+.QueueMasterIcon {
+    font-size: 26px !important;
+}

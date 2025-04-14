@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="./signIn.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- box icons -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="mainbg">
+        <div class="container">
+            <div class="row  d-flex-row h-100">
+                <div class="col-12 col-md-4 col-lg-3 mt-5 ">
+                    <div class="card shadow p-2" style="background-color: #FFFFFF;">
+                        <div class="card-body mx-auto mt-3">
+                            <img src="../../public/asset/img/login.png">
+                        </div>
+                        <div class="container">
+                            <form>
+                                <div>
+                                    <p class="credential">Email</p>
+                                    <input type="text" class="form-control" name="email" id="email"
+                                        placeholder="Alibrabra@adidarci.com" required>
+
+                                       
+                                        <div class="password-container mt-4">
+                                            <p class="credential">Password
+                                             <i class="bx bx-hide password-toggle float-end" id="password-toggle" ></i></p>
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="●●●●●●" required>
+                                           
+                                        </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check mt-4">
+                                        <input class="form-check-input" type="checkbox" value="" name="remember_me"
+                                            id="remember_me">
+                                        <label class="form-check-label credential d-flex justify-content-between" for="remember_me" style="line-height: 24px;">
+                                            Remember me<a href="#" class="labelcheck"> <a href="#" class="labelcheck">Reset Password.</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-grid mt-4 submitbtn">
+                                        <button class="btn bsb-btn-2xl subbtnbtn" type="submit">Login
+                                            QueueMaster</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <p class="credential">Dont't have account yet? <a href="signIn.html" class="labelcheck">New Account</a></p>
+                                </div>
+
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./signIn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+
+a.labelcheck {
+    text-decoration: none;
+}
+
+.mainbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.png) center/cover fixed;
+    filter: blur(3px); 
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card.cardwidth{
+    width:450px;
+    border:0;
+}
+
+.credential{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.4px;
+    color:  #030229;
+}
+input#email,
+input#password, input#forgotemail, input#Newpassword , input#Confirmpassword  {
+    border: none;
+    padding: 1rem;
+    background-color:  #F7F7F8;
+}
+.cardwidth .submitbtn{
+    background-color: #1458C2;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #ffffff !important;
+   
+}
+
+.btn.bsb-btn-2xl.subbtnbtn{
+    font-family: Arial;
+    font-weight: 700;
+    size: 16px;
+    line-height: 18.4px;
+    color: #ffffff;
+}
+
+.forgotp{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #7C7C7C;
+    }
+    
+.cardwidth .form-control {
+    height: 50px;
+ }
+
+ #submitButton:disabled {
+    background-color: #6c757d; 
+    color:#000 !important;
+    font-weight: 700;
+    cursor: not-allowed !important;
+    pointer-events: stroke;
+}
+
+#resetButton:disabled {
+    background-color: #6c757d; 
+    color:#000 !important;
+    font-weight: 700;
+    cursor: not-allowed !important;
+   pointer-events: stroke;
+}
+
+@media only screen and (max-width: 768px) {
+    .card.cardwidth{
+        width: 100%;
+    }
+    .alertlogin .alert{
+        width: 100%;
+    }
+}
+
+

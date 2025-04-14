@@ -1,0 +1,150 @@
+ ------ -------------------------------------------------------------------------------------------- 
+  Line   app/Console/Commands/InRuleQueueOperationsCommand.php                                       
+ ------ -------------------------------------------------------------------------------------------- 
+  16     Instantiated class App\Http\Controllers\queuebackend\cron\InRuleQueueOperations not found.  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+ ------ -------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------- 
+  Line   app/Console/Commands/OutRuleQueueOperationsCommand.php                                       
+ ------ --------------------------------------------------------------------------------------------- 
+  16     Instantiated class App\Http\Controllers\queuebackend\cron\OutRuleQueueOperations not found.  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                          
+ ------ --------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------- 
+  Line   app/Console/Commands/ProcessQueueOperationsCommand.php                                       
+ ------ --------------------------------------------------------------------------------------------- 
+  16     Instantiated class App\Http\Controllers\queuebackend\cron\ProcessQueueOperations not found.  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                          
+ ------ --------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------------------------------------- 
+  Line   app/Http/Controllers/Auth/VerificationController.php                                                                              
+ ------ ---------------------------------------------------------------------------------------------------------------------------------- 
+  20     Method App\Http\Controllers\Auth\VerificationController::show() should return Illuminate\Http\Response but return statement is    
+         missing.                                                                                                                          
+  38     Method App\Http\Controllers\Auth\VerificationController::verify() should return Illuminate\Http\Response but return statement is  
+         missing.                                                                                                                          
+ ------ ---------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+  Line   app/Http/Controllers/queuebackend/GetVisitorRawDataController.php                                                 
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+  19     Access to an undefined property App\Http\Controllers\queuebackend\GetVisitorRawDataController::$this_epoch_time.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                              
+  20     Access to an undefined property App\Http\Controllers\queuebackend\GetVisitorRawDataController::$def_lang.         
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                              
+  170    Undefined variable: $customer_id                                                                                  
+  250    Access to an undefined property App\Http\Controllers\queuebackend\GetVisitorRawDataController::$def_lang.         
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                              
+  268    Access to an undefined property App\Http\Controllers\queuebackend\GetVisitorRawDataController::$this_epoch_time.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                              
+  302    Undefined variable: $queue_room_image_url                                                                         
+  503    Undefined variable: $requestData                                                                                  
+  522    Undefined variable: $queueRoomImageURL                                                                            
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------- 
+  Line   app/Http/Controllers/queuebackend/PreQueueNotiSender.php                   
+ ------ --------------------------------------------------------------------------- 
+  95     Instantiated class App\Http\Controllers\queuebackend\Exception not found.  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols        
+  112    Caught class App\Http\Controllers\queuebackend\Exception not found.        
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols        
+ ------ --------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------- 
+  Line   app/Http/Controllers/queuebackend/ProcessDirectAccess.php  
+ ------ ----------------------------------------------------------- 
+  46     Undefined variable: $queue_serial_number_data              
+ ------ ----------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------- 
+  Line   app/Http/Controllers/queuebackend/QueueNotiSender.php                      
+ ------ --------------------------------------------------------------------------- 
+  87     Instantiated class App\Http\Controllers\queuebackend\Exception not found.  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols        
+  104    Caught class App\Http\Controllers\queuebackend\Exception not found.        
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols        
+ ------ --------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   app/Http/Controllers/queuebackend/StatsApiService.php                                                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+  14     Access to an undefined property App\Http\Controllers\queuebackend\StatsApiService::$this_epoch_time.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                  
+  89     Access to an undefined property App\Http\Controllers\queuebackend\StatsApiService::$this_epoch_time.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  Line   app/Http/Controllers/queuebackend/VisitorsDataQueueOperations.php                                                  
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  17     Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  18     Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  325    Undefined variable: $targetURL                                                                                     
+  349    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  368    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  417    Undefined variable: $target_url                                                                                    
+  457    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  457    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  595    Undefined variable: $expected_wait_time                                                                            
+  657    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  663    Undefined variable: $browser_session_id                                                                            
+  663    Undefined variable: $queue_serial_data                                                                             
+  666    Undefined variable: $browser_session_id                                                                            
+  666    Undefined variable: $queue_serial_data                                                                             
+  666    Undefined variable: $queue_serial_data                                                                             
+  683    Undefined variable: $total_query                                                                                   
+  888    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  895    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  975    Undefined variable: $cookie1                                                                                       
+  976    Undefined variable: $cookie2                                                                                       
+  977    Undefined variable: $cookie3                                                                                       
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   app/Notifications/SMSNotification.php                                
+ ------ --------------------------------------------------------------------- 
+  55     Instantiated class App\Notifications\TwilioSmsMessage not found.     
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+ ------ --------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  Line   app/Services/VisitorsDataQueueOperations.php                                                                       
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  17     Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  18     Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  92     Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  104    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  209    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  375    Undefined variable: $result                                                                                        
+  523    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  822    Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$this_epoch_time.   
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  1018   Access to an undefined property App\Http\Controllers\queuebackend\VisitorsDataQueueOperations::$default_language.  
+         💡 Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  1025   Undefined variable: $def_lang                                                                                      
+  1106   Undefined variable: $cookie1                                                                                       
+  1107   Undefined variable: $cookie2                                                                                       
+  1108   Undefined variable: $cookie3                                                                                       
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+
+ [ERROR] Found 55 errors                                                                                                
+

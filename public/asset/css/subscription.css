@@ -1,0 +1,402 @@
+.nav1 {
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.button {
+    border-radius: 12px !important;
+    padding: 12px, 20px, 12px, 20px;
+    grid-gap: 8px;
+    line-height: 19.36px;
+    font-size: 16px;
+    font-family: Inter;
+    animation-name: 16 bold;
+}
+
+.navbox .planbox{
+    border-radius: 12px;
+    padding: 20px;
+    grid-gap: 40px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+    min-height: 442px;
+}
+
+.navbox p.plandes {
+    font-family: Inter;
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 15.49px;
+    text-align: left;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.navlogo {
+    grid-gap: 4px;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 600;
+    align-items: baseline;
+    text-align: left;
+    display: flex;
+}
+
+.navlogo p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #AAAAAA;
+}
+
+.current {
+    grid-gap: 20px;
+    border-radius: 12px;
+    border: 1px;
+    padding: 10px;
+    background-color: #AAAAAA;
+    margin-top: 20px;
+}
+
+.current p {
+    animation-name: 16 medium;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+
+.icon {
+    width: 16.3px;
+    height: 12.03px;
+    top: 5.98px;
+    left: 3.85px;
+    text-decoration: none;
+
+
+}
+
+.icon p {
+    animation-name: 16;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+
+}
+.border.planbox {
+    position: relative;
+}
+.planName {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+}
+.bg-dark.navpopular.text-white.text-center {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.tablebox {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+}
+
+.table {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+table.table.planTable tr th p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 4px;
+}
+button.selectplan.currentplan{
+    background: #BABABA;
+    color: #fff;
+    border: 1px solid #BABABA;
+}
+button.selectplan {
+    padding: 8px 20px 8px 20px;
+    border-radius: 12px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    color: #fff;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+}
+.plancontent p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #000;
+    margin: 0px;
+    margin-left: 6px;
+}
+.planicon span {
+    font-size: 23px;
+    margin-top: 8px;
+}
+p.text-center.headingtxt.pb-3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+}
+table.table.planTable tr td {
+    padding: 20px;
+    vertical-align: middle;
+    border: 0px;
+    border-right: 1px solid #AAAAAA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+}
+table.table.planTable tr th{
+    text-align: center;
+}
+table.table.planTable tr td:first-child{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #000;
+    }
+table.table.planTable tr th{
+    border: 0px;
+}
+table.table.planTable>tbody>:nth-child(even) {
+    background-color: #f6f7f7;
+}
+.navplantab .nav-link {
+    padding: 12px 20px 12px 20px;
+    border-radius: 12px !important;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    margin: 0px 4px;
+}
+.navplantab .nav-link.active, .navplantab .nav-link:hover {
+    background: #000000;
+    border: 1px solid #000000;
+    color: #fff;
+}
+table.table.billingHistory>thead>tr>th {
+    border-bottom: 1px solid #EAEAEA !important;
+    padding: 20px 8px;
+    vertical-align: middle;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #AAAAAA;
+}
+table.table.billingHistory>tbody>tr>td {
+    border-bottom: 1px solid #EAEAEA !important;
+    padding: 8px;
+    vertical-align: middle;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #000000;
+}
+button.btn.uploadBtn, button.btn.uploadBtn:focus {
+    color: #3D51E4;
+    border: 0px;
+    outline: 0;
+}
+p.payment-heading {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.payment-subheading {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #AAAAAA;
+}
+.paymentbox .card-container {
+    /* border: 1px solid #AAAAAA; */
+    border-radius: 8px;
+    padding: 0;
+    max-width: 70%;
+    font-family: Arial, sans-serif;
+}
+.paymentbox .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F7F9;
+    padding: 20px;
+    border: 1px solid #AAAAAA;
+}
+.paymentbox .card-header img {
+    height: 24px;
+}
+.paymentbox .card-details {
+    margin-top: 8px;
+    font-size: 16px;
+}
+.paymentbox .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F7F9;
+    padding: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0px 0px 12px 12px;
+    border-top:0;
+}
+span.incheck {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #AAAAAA;
+    display: flex;
+    align-items: center;
+}
+.paymentbox  .add-card {
+    color: #3D51E4;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    background-color: transparent;
+    border: 0px;
+
+}
+.paymentbox .card-header:first-child {
+    border-radius: 12px 12px 0px 0px;
+}
+.paymentbox .card-details {
+    margin-top: 8px;
+    font-size: 16px;
+    min-width: 200px;
+    margin-left: 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #000;
+}
+.savecard{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.addcardModal input {
+    margin-bottom: 10px;
+}
+.addcardModal label{
+    margin: 10px 0;
+}
+.addcardModal .modal-header {
+    background: #000;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+}
+.addcardModal button.btn-close {
+    color: #fff;
+    filter: invert(1);
+    opacity: 1;
+}
+.addcardModal .modal-content {
+    border-radius: 15px;
+}
+span.material-symbols-outlined.help-icon.ms-2 {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    color: #3D51E4;
+}
+@media only screen and (max-width: 600px) {
+    .navplantab .nav-link{
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .paymentbox .card-container {
+        max-width: 100%;
+    }
+    .cardlogodetails{
+        display: block !important;
+    }
+    .card-details.w-100 {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+    span.incheck span.material-symbols-outlined.ms-3 {
+        margin-left: 4px !important;
+    }
+}
+@media (min-width: 576px) {
+    .addcardModal .modal-dialog {
+        max-width: 700px;
+    }
+}

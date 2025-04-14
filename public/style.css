@@ -1,0 +1,497 @@
+/**
+* Template Name: Queuing Template
+* Updated: Bootstrap v5.0.2
+* Template URL: Walikingdreamz.com/template
+* Author: Walkingdreamz
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: Arial;
+  src: url(../Fonts/arial.ttf);
+}
+body {
+  font-family: Arial;
+  color: #272829;
+}
+*{
+  font-family: Arial;
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  margin-left: 0px;
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  width: 100%;
+  left: 0;
+  padding: 20px 20px 20px 20px;
+  height: 86px;
+  border-bottom: 1px solid #7C7C7C;
+  z-index: 99;
+}
+
+/* end Header */
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 0px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+#sidebar .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 135px;
+}
+
+#sidebar .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: Arial;
+}
+
+#sidebar .profile h1 a,
+#sidebar .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#sidebar .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#sidebar .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+div#sidebar{
+  border-right: 1px solid #7C7C7C;
+}
+/* End header css */
+
+/* Start Main Css */
+#main {
+  padding-left: 270px;
+  padding-top: 100px;
+  
+}
+
+.container,
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+a.nav-link.scrollto.active.NavHome, a.nav-link.scrollto.NavHome:hover {
+  background: #1458C2;
+  color: #fff;
+}
+a.nav-link.scrollto.active.NavStats, a.nav-link.scrollto.NavStats:hover {
+  background: #952FBF;
+}
+a.nav-link.scrollto.active.NavQueueRoom, a.nav-link.scrollto.NavQueueRoom:hover {
+  background: #159AA1;
+}
+a.nav-link.scrollto.active.NavTemplateManagement, a.nav-link.scrollto.NavTemplateManagement:hover, a.nav-link.scrollto.active.NavQueueDesign, a.nav-link.scrollto.NavQueueDesign:hover, a.nav-link.scrollto.active.NavInOutRules, a.nav-link.scrollto.NavInOutRules:hover, a.nav-link.scrollto.active.NavSMSEmailNotice, a.nav-link.scrollto.NavSMSEmailNotice:hover {
+  background: #0E793F;
+}
+a.nav-link.scrollto.NavDeveloper.active, a.nav-link.scrollto.NavDeveloper:hover{
+  background: #CA5426;
+}
+a.nav-link.scrollto.NavTemplateManagement .navIcons, a.nav-link.scrollto.NavTemplateManagement span, a.nav-link.scrollto.NavQueueDesign .navIcons, a.nav-link.scrollto.NavQueueDesign span, a.nav-link.scrollto.NavInOutRules .navIcons, a.nav-link.scrollto.NavInOutRules span, a.nav-link.scrollto.NavSMSEmailNotice .navIcons, a.nav-link.scrollto.NavSMSEmailNotice span{
+  color: #0E793F;
+}
+a.nav-link.scrollto.NavQueueRoom .navIcons, a.nav-link.scrollto.NavQueueRoom span{
+  color: #159AA1;
+
+}
+a.nav-link.scrollto.NavStats .navIcons, a.nav-link.scrollto.NavStats span{
+  color: #952FBF;
+}
+a.nav-link.scrollto.NavDeveloper .navIcons, a.nav-link.scrollto.NavDeveloper span{
+  color: #CA5426;
+}
+a.nav-link.scrollto.NavHome .navIcons, a.nav-link.scrollto.NavHome span{
+  color: #1458C2;
+
+}
+#sidebar .navbar ul {
+  width: 100%;
+}
+a.nav-link.scrollto.active span, a.nav-link.scrollto:hover span {
+  color: #fff !important;
+}
+a.nav-link.scrollto.active .navIcons, a.nav-link.scrollto:hover .navIcons {
+  color: #fff !important;
+}
+a.nav-link.scrollto span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+
+}
+a.nav-link.scrollto .navIcons {
+  color: #000;
+}
+a.nav-link.scrollto.active span {
+  font-size: 16px;
+  font-weight: 700;
+}
+a.nav-link.scrollto{
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+}
+a.nav-link.scrollto .navIcons {
+  padding-right: 8px;
+  font-size: 28px;
+}
+@media (max-width: 1199px) {
+  #sidebar {
+    left: -270px;
+  }
+  #header {
+    margin-left: 0;
+  }
+  #main {
+    padding-left: 0;
+    border-left: 0px;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* end Main Css */
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color: #149ddd;
+}
+ul.dropdown-menu.NavDropdown.show {
+ top: 34px !important;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  /* position: fixed;
+  right: 15px;
+  top: 15px; */
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #159AA1;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #sidebar {
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background: #f9f9f9;
+}
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #0e2442;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+nav.QueueBreadCrumb li.breadcrumb-item a {
+  background: #159AA11A;
+  padding: 4px 28px 4px 28px;
+  border-radius: 16px;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #159AA11A;
+  text-decoration: none;
+  color: #159AA1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+nav.QueueBreadCrumb .breadcrumb-item+.breadcrumb-item::before {
+  content: '\e5e1';
+  font-family: 'Material Symbols Outlined';
+  color: #159AA1;
+  font-size: 16px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+nav.QueueBreadCrumb li.breadcrumb-item.Homebreadcrumb a{
+  background-color: transparent;
+  padding: 4px 5px 4px 4px;
+  font-size: 26px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll bar
+--------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar, .table-responsive::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track, .table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb, .table-responsive::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover, .table-responsive::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* End Scroll bar */
+
+.nav-menu a span {
+  color: #000;
+}
+
+.nav-menu a span.material-symbols-outlined, span.material-symbols-outlined.tempicon, span.material-symbols-outlined.queueicon {
+  font-weight: 500;
+  font-variation-settings:'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+section.SectionPadding {
+  padding: 50px;
+}
+.bgmain{
+  background-color: #F3F5F9;
+}
+@media (max-width: 992px) {
+  section.SectionPadding {
+    padding: 20px;
+  }
+}
+::placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: #000;
+}
+.form-check-input:checked {
+  background-color: #159AA1 !important;
+  border-color: #159AA1 !important;
+}
+.profilewidth {
+  width: 30px;
+}
+.logoutbutton{
+  border: 0;
+  background-color: transparent;
+}
+nav.QueueBreadCrumb li.breadcrumb-item.Homebreadcrumb:first-child a {
+  background: transparent;
+}
+@media (max-width: 992px) {
+  ol.breadcrumb {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      overflow: auto;
+      white-space: nowrap;
+  }
+  nav.QueueBreadCrumb {
+      width: 100%;
+  }
+
+}
+button.btn.btn-link.me-1 {
+  padding: 0px;
+}
+@media (max-width: 767px) {
+  div#profileDropdown {
+      margin-right: 16px !important;
+  }
+}
+
+ul.dropdown-menu.NavDropdown .dropdown-item:hover, ul.dropdown-menu.NavDropdown .dropdown-item:active, ul.dropdown-menu.NavDropdown .dropdown-item:focus {
+  background-color: transparent;
+}

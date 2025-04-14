@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.draft-icon {
+    border: 1px solid white;
+    border-radius: 60%;
+}
+
+body {
+    font-family: Arial;
+}
+.queuehomeicon {
+    color: #3D51E4;
+    font-size: 30px;
+}
+.bgmain{
+    background-color: #F3F5F9;
+    min-height: 100vh;
+}
+.queueText {
+    background: #3D51E4;
+    border-radius: 23px;
+    height: 25px;
+    line-height: 2px;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 900;width: 100%;
+    margin-left: 30px;
+}
+.allcard{
+    border: none;
+}
+.bgtable{
+    background-color:#F2EEEB ;
+}
+.queueth, .textdata{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.progress{
+    width: 9pc;
+    height: 9px;
+}
+.editicon{
+    color:#3D51E4
+}
+.editicon:active , .editicon:focus, .editicon:hover{
+    color: #3D51E4;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 100%;
+    border-bottom: 3px solid  #3D51E4;;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.submitbtn{
+    background-color: #3D51E4;
+    ;
+    height: 2.490rem;
+}
+.createqueue{
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    line-height: 13px;
+}
+.plusicon{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    line-height: 13px;
+}
+.queueth, .textdata{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.datedata{
+    color: #3D51E4;
+}
+
+.spacetable{
+    white-space: nowrap;
+}
+.allcard .spacetable td {
+    background: #fff;
+    border-bottom: 4px solid #F3F5F9 !important;
+}
+.allcard .spacetable tr {
+    box-shadow: rgb(255 255 255 / 8%) -7px 9px 30px -12px;
+}
+.spacetable {
+    white-space: nowrap;
+}
+table.spacetable th {
+    padding: 14px 20px !important;
+}
+table.spacetable td {
+    padding: 14px 20px !important;
+}
+h6.textdata.datedata {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+img.queueProfielImg {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+tr:first-child {
+    border-spacing: 0;
+}
+@media only screen and (max-width: 768px) {
+    .stateText {
+        text-align: center;
+    }
+    .liveroom{
+        width: 100%;
+    }
+    .submitbtn{
+        width: 100% !important;
+    }
+    .subbtnbtnBox {
+        justify-content: center !important;
+    }
+}
+@media (min-width: 576px){
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+@media (min-width: 992px){
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    }
+
+
+
+

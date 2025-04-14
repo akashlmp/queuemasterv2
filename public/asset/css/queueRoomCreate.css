@@ -1,0 +1,602 @@
+body {
+    background: #eee
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+
+h1 {
+    text-align: center
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa
+}
+
+input.invalid {
+    background-color: #ffdddd
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: poArial
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+#prevBtn {
+    background-color: #bbbbbb
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: #4CAF50
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.thanks-message {
+    display: none
+}
+
+/* .container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: poArial;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} */
+
+
+/* Hide the browser's default radio button */
+
+.container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: poArial;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked~.checkmark:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.tab-pane.active.show {
+    display: block;
+}
+
+.tab-pane {
+    display: none;
+}
+h5.FormHeading {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+p.FormPara {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #202020;
+}
+input#exampleInputEmail1 {
+    padding: 12px 16px 12px 16px;
+    border: 2px solid #ADB5BD;
+    height: 42px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.LeftRedborder {
+    /* border-left: 4px solid #FF0F0F; */
+    border-left: 4px solid #fff;
+}
+.LeftGreenborder {
+    /* border-left: 4px solid #008000; */
+    border-left: 4px solid #fff;
+}
+.QueueDataCheckboxes input[type="radio"]{
+    opacity: 1;
+}
+.QueueDataCheckboxes .form-check-input, .LevelNotifyCheckBox .form-check-input{
+    height: 0.5em;
+    width: 0.5em;
+    padding: 10px;
+    opacity: 1;
+}
+.QueueDataCheckboxes label.form-check-label {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.nav.nav-tabs.QueueingTabs .nav-links {
+    background: transparent;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AFAFAF;
+}
+.nav.nav-tabs.QueueingTabs .nav-links.active {
+    color: #159AA1;
+    border-bottom: 5px solid #159AA1;
+}
+select.TempCreateSlt {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #202020;
+    padding: 12px 16px 12px 16px;
+    border: 2px solid #ADB5BD;
+    border-radius: 4px;
+    height: 44px;
+}
+.LeftGreenborder label.form-check-label {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 6px;
+}
+.LeftGreenborder input[type="radio"] {
+    opacity: 1;
+    padding: 10px;
+    margin-top: 0px;
+}
+.LeftGreenborder .form-check {
+    display: flex;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.AdvanceSettingBox {
+    /* display: none; */ /* Hide the AdvanceSettingBox by default */
+}
+button.DeleteTableRow, button.AddTableRow {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ADB5BD;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+}
+.AdvanceSettingBox {
+    background: #E9ECEF;
+    padding: 12px;
+    border-radius: 10px;
+}
+.AdvanceSettingBox .form-control.FormInputBox {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 2px solid #ADB5BD;
+}
+input.TotalVisitor {
+    width: 100px;
+    margin: 0px 12px;
+    height: 43px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 8px;
+    border: 2px solid #ADB5BD;
+    color: #000;
+    background-color: #fff;
+}
+.TotalVisitortxt {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.form-switch .form-check-input.advancedtoggle {
+    margin-left: 1.5em;
+}
+button.btn.btn-secondary.d-flex.align-items-center.justify-content-center.me-2.backBtn {
+    border: 2px solid #159AA1;
+    color: #159AA1;
+}
+label.FormInputBoxLabel {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    color: #202020;
+}
+button.btn.DownloadExcelbtn, label.btn.UploadExcelbtn {
+    padding: 4px 20px 4px 20px;
+    border: 1px solid #159AA1;
+    color: #159AA1;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 42px;
+}
+.QueueDeleteBtn{
+    background-color: transparent;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.dateTimePickers {
+    padding: 12px 16px 12px 16px;
+    color: #ADB5BD;
+    border: 2px solid #ADB5BD;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    border-radius: 4px;
+  }
+  p.FormPara.languagePara{
+    color: #202020;
+
+}
+.saveBtn, .saveBtn:hover, .nextBtn, .nextBtn:hover{
+    background: #159AA1;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #159AA1;
+    color: #fff;
+}
+.editBtn, .editBtn:hover{
+    background: #159AA1;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #159AA1;
+    color: #fff;
+}
+.backBtn, .backBtn:hover{
+    background: transparent;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px 20px 10px 20px;  
+    border: 2px solid #7C7C7C;
+    color: #7C7C7C;
+}
+
+.form-check input.queueCheckBox {
+    width: unset;
+    position: relative;
+    height: 22px;
+    width: 22px;
+}
+
+.form-check input.queueCheckBox {
+    background-color: #159AA1;
+    accent-color: #159AA1;
+  }
+.advanceSettngToggle p{
+    color: #159AA1;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.AdvanceSettingBox p.FormPara {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.AdvanceSettingBox td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+button.AddTableRow span.material-symbols-outlined {
+    font-weight: 700;
+    font-size: 28px;
+}
+/* .AdvanceSettingBox td:last-child, .AdvanceSettingBox td:nth-last-child(2){ 
+    padding-right: 0;
+}  */
+.QueueingTabs {
+    border-bottom: 3px solid #ADB5BD;
+}
+
+@media (max-width: 992px) {
+    .StepFormButtonsGrp{
+        display: block !important;
+    }
+    .StepFormButtonsGrp .backBtn, .StepFormButtonsGrp .saveBtn, .StepFormButtonsGrp .nextBtn{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .DownloadExcel.me-3 {
+        margin: 0px !important;
+    }
+    .QueueingTabs, ol.breadcrumb {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    button.btn.DownloadExcelbtn, label.btn.UploadExcelbtn {
+        justify-content: center !important;
+        font-size: 14px;
+        padding: 4px 14px 4px 14px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-checks.form-switch {
+        margin-left: 15px;
+    }
+    span.material-symbols-outlined.pe-3 {
+        padding-right: 4px !important;
+    }
+    /*--------------------------------------------------------------
+        # Scroll bar
+        --------------------------------------------------------------*/
+        /* width */
+        .QueueingTabs::-webkit-scrollbar, ol.breadcrumb::-webkit-scrollbar {
+            width: 6px;
+            height: 2px;
+        }
+        
+        /* Track */
+        .QueueingTabs::-webkit-scrollbar-track, ol.breadcrumb::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+        /* Handle */
+        .QueueingTabs::-webkit-scrollbar-thumb, ol.breadcrumb::-webkit-scrollbar-thumb {
+            background: #ccc; 
+        }
+        
+        /* Handle on hover */
+        .QueueingTabs::-webkit-scrollbar-thumb:hover, ol.breadcrumb::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+        .QueueDataCheckboxes, .downloadFlex {
+            display: block !important;
+        }
+        .QueueDataCheckboxes .form-check{
+            padding-left: 0;
+        }
+        /* End Scroll bar */
+        .AdvanceSettingBox .form-control.FormInputBox{
+            width: 150px;
+        }
+}
+.CustomDateBoxhidden{
+    display: none;
+}
+.inputfieldTimepikcer{
+    position: relative;
+    width: 100%;
+}
+.inputfieldTimepikcer input {
+    border: 1px solid #bfc9e2;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    width: 100%;
+  }
+.inputfieldTimepikcer  input[type=time]::-webkit-calendar-picker-indicator {
+    bottom: 0;
+    color: transparent;
+    cursor: poArial;
+    height: auto;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%
+}
+.inputfieldTimepikcer .clock-img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #ADB5BD;
+    font-size: 22px;
+}
+.DateTimeIconBox {
+    position: relative;
+}
+.DateTimeIcon {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    color: #ADB5BD;
+}
+.DateTimeRightIcon{
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    color: #ADB5BD;
+}
+.DateTimeIconBox  input.FormInputBox {
+    padding-left: 34px;
+}
+.CustomDateTime{
+    display: none;
+}
+input#AdvanceSettingCheckBox {
+    margin-left: 1px;
+}
+.form-switch {
+    padding-left: 1.5em;
+}
+.CustomUrlBox {
+    display: none;
+}
+img.img-responsive.iconQueueImg {
+    /* width: 55px; */
+    height: 55px;
+}
+label.d-flex.align-items-center.iconQueueLabel {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #159AA1;
+}
+.form-control{
+    font-family: Arial;
+}
+.select2-container--bootstrap5 .select2-search--dropdown {
+    z-index: 100;
+    width: calc(100% - 4rem);
+    margin-right: 1rem;
+  }
+  .selectdrop span.select2.select2-container.select2-container--default {
+      width: 100% !important;
+      height: 38px;
+  }
+  .selectdrop .select2-container--default .select2-selection--single .select2-selection__rendered, .selectdrop .select2-container--default .select2-selection--single {
+      line-height: 38px;
+      height: 38px;
+  }
+  .selectdrop .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+  }
+
+
+  

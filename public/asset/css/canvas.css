@@ -1,0 +1,267 @@
+/* top header */
+.queue-gjs-TopHeader{
+    display: flex;
+    padding: 20px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.btn.Canelandbackbtn {
+    display: flex;
+    align-items: center;
+}
+.arrowicon{
+    color: #159AA1;
+}
+.textcolor{
+    color: #159AA1;
+}
+
+button.btn.SaveandexitBtn {
+    display: flex;
+    align-items: center;
+}
+.queue-gjs-TopHeader .nav-tabs li.nav-item button.nav-link.active {
+    border-bottom: 5px solid #159AA1;
+    color: #159AA1;
+
+
+}
+.queue-gjs-TopHeader .nav-tabs li.nav-item button.nav-link {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    color:#7C7C7C;
+    border-bottom:5px solid white;
+    font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+}
+.queue-gjs-TopHeader .nav-tabs {
+    border-bottom: 0;
+}
+
+/* top header end */
+.progress {
+    height: 30px;
+    background: #000;
+}
+div#ic55 {
+    padding: 26px;
+}
+.progress-bar{
+    height: 30px;
+    background: #000;
+}
+.custom-form {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Additional styles for form elements */
+.custom-form .form-group {
+    margin-bottom: 10px;
+}
+/* Custom styles for input field */
+.custom-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.SectionPaddingg{
+    padding: 10px;
+}
+.colfirstimg{
+    width: 100%;
+    border: 3px solid gray;
+    height: 130px;
+}
+.columnclassborder{
+    border-right:1px solid black;
+}
+.imgdiv{
+padding: 10px;
+}
+.btnpadding{
+    padding: 8px;
+    border-radius: 10px;
+}
+.fontcolor{
+    color: #159AA1;
+}
+
+/* grape js css*/
+
+/* .queuegjs .gjs-mdl-header, .queuegjs .gjs-mdl-content{
+    background-color: #000;
+    color: #FFFFFF;
+} 
+
+
+.queuegjs .gjs-editor.gjs-one-bg.gjs-two-color {
+    margin-top: 5%;
+}
+
+.queuegjs .gjs-editor.gjs-one-bg.gjs-two-color .gjs-pn-views-container {
+    width: 100%;
+    height: unset;
+    position: relative;
+    top: 50px;
+    box-shadow: unset;
+}
+
+.queuegjs .gjs-blocks-no-cat .gjs-blocks-c {
+    display: flex;
+    flex-wrap: unset;
+    min-height: 30%;
+}
+
+.queuegjs .gjs-cv-canvas.gjs-no-touch-actions.gjs-cv-canvas-bg {
+    width: 100%;
+}
+
+.queuegjs .gjs-block {
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-around;
+}
+
+.queuegjs .gjs-block {
+    margin: 0px;
+}
+
+.queuegjs .gjs-blocks-c .gjs-one-bg {
+    color: #000;
+    border: 0px;
+    background: transparent;
+    padding: 12px 4px 12px 4px;
+}
+.queuegjs .gjs-blocks-c .gjs-one-bg img, .queuegjs .gjs-blocks-c .gjs-one-bg span {
+    width: 18px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.queuegjs #i8b7{
+    margin-bottom: 20%;
+}
+.queuegjs .gjs-blocks-cs.gjs-one-bg.gjs-two-color {
+    background-color: #F3F5F9;
+}
+.contentmain{
+    margin-bottom: 20 !important;
+}
+
+.queuegjs .gjs-two-color {
+    background-color: transparent;
+    color: #000;
+    border: 0px;
+    box-shadow: none;
+
+}
+
+.queuegjs .gjs-block {
+    box-shadow: none;
+    border: 0px;
+}
+
+.queuegjs .gjs-blocks-no-cat .gjs-blocks-c {
+    display: flex;
+    flex-wrap: unset;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin: 0px 18px;
+}
+
+.queuegjs .gjs-frame-wrapper__top,
+.queuegjs .gjs-layer,
+.queuegjs .gjs-sm-header,
+.queuegjs .trt-header {
+    transform: unset;
+    display: flex;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-height: 100px;
+    background-color: #F3F5F9;
+}
+
+.queuegjs iframe.gjs-frame {
+    position: relative;
+    background: #f3f4f9;
+    top: 127px;
+    padding: 5px;
+    border-top: 0;
+}
+
+.queuegjs iframe.gjs-frame body {
+    background: #F3F5F9;
+}
+
+.queuegjs .gjs-dashed *[data-gjs-highlightable] {
+    border: 0;
+}
+
+.queuegjs .gjs-layer.gjs-layer__t-text.no-select.gjs-two-color.gjs-selected {
+    display: grid;
+}
+
+.queuegjs .gjs-cv-canvas-bg {
+    background-color: transparent;
+}
+
+.queuegjs .gjs-sm-sectors.gjs-one-bg.gjs-two-color,
+.queuegjs .gjs-clm-tags.gjs-one-bg.gjs-two-color {
+    background: #fff;
+    padding: 12px;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.column-1-2 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+
+.column-1-3 {
+    width: 33.333333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.column-2-3 {
+    width: 66.666666%;
+    float: left;
+    padding: 0 15px;
+}
+
+
+.column-1-2 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+
+.column-1-3 {
+    width: 33.333333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.column-2-3 {
+    width: 66.666666%;
+    float: left;
+    padding: 0 15px;
+} */
