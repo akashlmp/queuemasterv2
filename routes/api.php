@@ -60,4 +60,4 @@ Route::any('/webhookEvent', [StripeController::class, 'stripeWebhook']);
 
 
 Route::post('/throttle/check', [\App\Http\Controllers\ThrottleController::class, 'check'])->name('check-api');
-Route::get('/throttle/retry', [\App\Http\Controllers\ThrottleController::class, 'retry'])->name('retry-api');    
+Route::post('/throttle/retry', [\App\Http\Controllers\ThrottleController::class, 'retry'])->name('retry-api');    

@@ -15,104 +15,126 @@ class ThrottleController extends Controller
         $domain = "http://127.0.0.1:8080";
         $target = "http://127.0.0.1:8080/target";
         $queue = "http://127.0.0.1:8080/queue";
-
         $limit = 3;
         $key = "queue_count:{$domain}:" . now()->format('YmdHi');
-
         if ((Redis::get($key) ?? 0) < $limit) {
             Redis::incr($key);
             Redis::expire($key, 60);
             return response()->json(['status' => 'allowed', 'redirect' => $target]);
         }
-
         // Add to queue
         $token = Str::uuid();
         Redis::rpush("queue:{$domain}", $token);
         Redis::setex("user_token:{$token}", 600, $domain);
-
-        return response()->json(['status' => 'queued', 'token' => $token]);
+        return response()->json([
+            'status' => 'queued',
+            'token' => $token,
+            'redirect' => "$queue?token=$token"
+        ]);
     }
 
     // /api/throttle/retry
     public function retry(Request $request)
     {
-        $limit = 2; // Limit: Only 2 users per minute
-        $intervalSeconds = 60; // Interval for each user
+        $token = $request->query('token');
+        $domain = Redis::get("user_token:{$token}");
 
-        $websiteId = $request->query('website_id');
-        $fingerprint = $request->query('fingerprint');
-
-        // Retrieve user data from session or generate unique ID
-        if (!session()->has('queue_user_id')) {
-            session()->put('queue_user_id', "$websiteId.$fingerprint");
+        if (!$domain) {
+            // Token expired
+            return response()->json([
+                'status' => 'expired',
+                'redirect' => $domain ?? 'http://127.0.0.1:8080'
+            ]);
         }
 
-        $userId = session('queue_user_id');
-        $queueKey = 'global_user_queue';
-        $queue = Cache::get($queueKey, []);
-
-        // Add user to queue if not already there
-        if (!in_array($userId, $queue)) {
-            $queue[] = $userId;
-            Cache::put($queueKey, $queue, now()->addMinutes(10));
-        }
-
-        $position = array_search($userId, $queue);
+        $queueKey = "queue:{$domain}";
+        $queue = Redis::lrange($queueKey, 0, -1);
+        $position = array_search($token, $queue);
 
         if ($position === false) {
-            abort(403, 'Queue error.');
+            // Token not found in queue
+            return response()->json([
+                'status' => 'not_found',
+                'redirect' => $domain
+            ]);
         }
 
-        // Calculate the user's allowed time to access
-        $allowedAt = Carbon::now()->startOfMinute()->addSeconds($intervalSeconds);
+        // Check wait time
+        $createdAtKey = "user_token_time:{$token}";
+        $createdAt = Redis::get($createdAtKey);
 
-        if (now()->greaterThanOrEqualTo($allowedAt)) {
+        if (!$createdAt) {
+            // First time setting creation time
+            Redis::setex($createdAtKey, 600, now()->timestamp);
+            $createdAt = now()->timestamp;
+        }
+
+        $waitTime = now()->timestamp - intval($createdAt);
+
+        if ($position === 0 || $waitTime >= 60) {
+            // Pop from queue and allow access
+            Redis::lrem($queueKey, 0, $token);
+            Redis::del("user_token:{$token}");
+            Redis::del($createdAtKey);
+
+            $countKey = "queue_count:{$domain}:" . now()->format('YmdHi');
+            Redis::incr($countKey);
+            Redis::expire($countKey, 60);
+
             return response()->json([
-                'allowed' => true,
-                'message' => 'Access granted. You can access the target page.',
+                'status' => 'allowed',
+                'redirect' => "{$domain}/target"
             ]);
         }
 
         return response()->json([
-            'allowed' => false,
-            'wait' => $allowedAt->diffInSeconds(now())
-            // 'redirect_url' => "https://your-cloudfront-domain.com/queue.html?wait=" . $allowedAt->diffInSeconds(now()),
+            'status' => 'waiting',
+            'position' => $position,
+            'waited' => $waitTime
         ]);
     }
+
+
     public function embedScript(Request $request)
     {
-        $targetUrl = $request->query('target_url', 'http://127.0.0.1:8080/target'); // Your target page URL
-        $queuePageUrl = 'http://127.0.0.1:8080/queue'; // Your queue page URL
-        $api = route('check-api'); // API route to check if user is allowed to access the target page
+        $targetUrl = $request->query('target_url', 'http://127.0.0.1:8080/target');
+        $queuePageUrl = 'http://127.0.0.1:8080/queue';
+        $api = route('check-api');
 
         $script = <<<EOT
-        (function() {
-            const SAAS_API_URL = "{$api}";
-            const TARGET_URL = "{$targetUrl}";
-            const QUEUE_PAGE_URL = "{$queuePageUrl}";
-            // When the user tries to go to the target page, we check if they are allowed
-            document.querySelector('a').addEventListener('click', async  function(e) {
-                e.preventDefault(); // Prevent the default link behavior
-               if(this.href == `\${TARGET_URL}`){
-                const res = await fetch(`\${SAAS_API_URL}`,{
-                        method: "POST",
-                        headers: { 'Content-Type': 'application/json' },
-                    });
-                     const data = await res.json();
-            if (data.status === 'allowed') {
-                window.location.href = data.redirect;
-            } else if (data.status === 'queued') {
-                const waitingUrl = `\${QUEUE_PAGE_URL}?token=\${data.token}`;
-                window.location.href = waitingUrl;
-            }
-            }
-            });
-        })();
-        EOT;
+(async function() {
+    const SAAS_API_URL = "{$api}";
+    const TARGET_URL = "{$targetUrl}";
+    const QUEUE_PAGE_URL = "{$queuePageUrl}";
+
+    try {
+        const res = await fetch(SAAS_API_URL, {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url: window.location.href })
+        });
+
+        const data = await res.json();
+
+        if (data.status === 'allowed') {
+            // window.location.href = data.redirect;
+        } else if (data.status === 'queued') {
+         console.log(data)
+            window.location.href = data.redirect;
+        } else {
+            console.warn('Unhandled status:', data.status);
+        }
+    } catch (err) {
+        console.error('Throttle script error:', err);
+    }
+})();
+EOT;
 
         return response($script, 200)
             ->header('Content-Type', 'application/javascript');
     }
+
+
 
 
 
